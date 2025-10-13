@@ -1,0 +1,56 @@
+{
+  "Hotel": [
+    {
+      "id": "HOTEL_OPEN_01",
+      "title": "Otwarcie dzienne — hotel",
+      "questions": [
+        {
+          "id": "Q1",
+          "text": "Recepcja przygotowana?",
+          "type": "boolean"
+        },
+        {
+          "id": "Q2",
+          "text": "Stan kasy zgadza się?",
+          "type": "boolean"
+        },
+        {
+          "id": "Q3",
+          "text": "Liczba wolnych pokoi",
+          "type": "number"
+        }
+      ]
+    }
+  ],
+  "Restauracja": [
+    {
+      "id": "REST_OPEN_01",
+      "title": "Otwarcie dzienne — restauracja",
+      "questions": [
+        {
+          "id": "Q1",
+          "text": "Kuchnia przygotowana?",
+          "type": "boolean"
+        },
+        {
+          "id": "Q2",
+          "text": "Dostawy uzupełnione?",
+          "type": "boolean"
+        }
+      ]
+    }
+  ],
+  "Budki": [
+    {
+      "id": "BUDKI_OPEN_01",
+      "title": "Otwarcie dzienne — budki",
+      "questions": [
+        {
+          "id": "Q1",
+          "text": "Stan urządzeń OK?",
+          "type": "boolean"
+        }
+      ]
+    }
+  ]
+}
