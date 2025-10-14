@@ -1,0 +1,1698 @@
+{
+  "Hotel": [],
+  "Restauracja": [
+    {
+      "id": "POMARA_CZOWA_PLA_A",
+      "title": "Pomarańczowa Plaża",
+      "questions": [
+        {
+          "id": "POMARA_CZOWA_PLA_A_001",
+          "text": "1. liście i papierki na tarasie - posprzątać",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_002",
+          "text": "2. krzesła na tarasie  - przetrzeć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_003",
+          "text": "24herbs Gin (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_004",
+          "text": "3. pleksi taras - wytrzeć rosę ściągaczką jeśli jest rosa",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_005",
+          "text": "9. plac zabaw - posprzątać śmieci i uporządkować",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_006",
+          "text": "Aperol (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_007",
+          "text": "Bacardi (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_008",
+          "text": "Bacardi kokos",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_009",
+          "text": "bar - wytrzeć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_010",
+          "text": "BAR otwarcie",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_011",
+          "text": "Bols 0,7 (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_012",
+          "text": "Bols brzoskwiniowy (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_013",
+          "text": "Bols kokosowy (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_014",
+          "text": "Burn 0,25 (ilość sztuk)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_015",
+          "text": "Campari (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_016",
+          "text": "Cappy 0,33 jabłko (ilość sztuk)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_017",
+          "text": "Cappy 0,33 pomarańcza (ilośc sztuk)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_018",
+          "text": "Chiant Terra Del Brune czerwone (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_019",
+          "text": "Chowamy pomocnik kelnerski i menu",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_020",
+          "text": "Coca Cola 0,5 (ilość sztuk)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_021",
+          "text": "Coca Cola Zero 0,5 (ilośc sztuk)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_022",
+          "text": "Cola Cherry",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_023",
+          "text": "Curacao",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_024",
+          "text": "Czy jest mydło w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_025",
+          "text": "Czy jest mydło w toalecie męskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_026",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_027",
+          "text": "Czy jest papier toaletowy w toalecie męskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_028",
+          "text": "Czy jest porządek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_029",
+          "text": "Czy jest porządek w toalecie męskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_030",
+          "text": "Czy nie ma pustych leżakĂłw odpiętych",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_031",
+          "text": "Czy nie ma śmieci na plaży/wokĂłł budki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_032",
+          "text": "Czy nie ma śmieci na terenie budki i wokĂłł budki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_033",
+          "text": "Czy są robione zdjęcia toalet",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_034",
+          "text": "Czy wszyscy są na stanowisku pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_035",
+          "text": "Czystość na tarasie",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_036",
+          "text": "Datowanie mleka, sosĂłw i syropĂłw",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_037",
+          "text": "Datować wszystkie otwarte produkty",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_038",
+          "text": "De Falco Chardonnnay białe  (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_039",
+          "text": "De Falco Primitivo red (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_040",
+          "text": "dolać mus, miĂłd",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_041",
+          "text": "dolać soki do piwa",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_042",
+          "text": "doniesc drewno i rozpałkę",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_043",
+          "text": "donieść drzewo i drzazgi do kominka",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_044",
+          "text": "Donieść lody z mrośni",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_045",
+          "text": "donieść miętę, rozmaryn, imbir",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_046",
+          "text": "donieść mleko (normalne i bez laktozy)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_047",
+          "text": "donieść owoce",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_048",
+          "text": "donieść szkło",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_049",
+          "text": "dopełnić warnik wodą",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_050",
+          "text": "drzwi wejściowe w tym przy placu zabaw - zamknąć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_051",
+          "text": "ekspres śniadaniowy - oprĂłżnić szufladę i fusy",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_052",
+          "text": "Esmeralda bianco",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_053",
+          "text": "Esmeralda orange",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_054",
+          "text": "Fanta 0,5 (ilość sztuk)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_055",
+          "text": "FuzeTea 0,5 cytryna (ilośc sztuk)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_056",
+          "text": "FuzeTea 0,5 peach (ilość sztuk)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_057",
+          "text": "Genoa RED",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_058",
+          "text": "Genoa WHITE",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_059",
+          "text": "girlandy na markizie - sprawdś czy włączone",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_060",
+          "text": "girlandy wkoło restauracji - sprawdś czy włączone",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_061",
+          "text": "Grants (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_062",
+          "text": "Hendrick's",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_063",
+          "text": "Hennesy VSOP  (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_064",
+          "text": "info. o rezerwacji na stołach - ustawić",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_065",
+          "text": "Jagermaeister (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_066",
+          "text": "Kahlua (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_067",
+          "text": "kawa (ilość opakowań)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_068",
+          "text": "KEG Kozel",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_069",
+          "text": "KEG Książece Lager",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_070",
+          "text": "KEG Pszenica",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_071",
+          "text": "KEG Tyskie",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_072",
+          "text": "Kinley 0,5 (ilość sztuk)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_073",
+          "text": "Książece Ciemne Ĺagodne (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_074",
+          "text": "Książęce Cherry ALE (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_075",
+          "text": "Książęce Czerwony Lager (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_076",
+          "text": "Książęce IPA 0% (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_077",
+          "text": "Książęce IPA (ilośc butelek )",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_078",
+          "text": "Książęce Porter (ilosc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_079",
+          "text": "Książęce Złote Pszeniczne 0% (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_080",
+          "text": "Książęce Złote Pszeniczne (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_081",
+          "text": "lampy sufitowe na listwach - wyłączyć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_082",
+          "text": "lampy sufitowe na listwach - włączyć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_083",
+          "text": "Lanni Rosso red (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_084",
+          "text": "Lech 0% 0,5l",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_085",
+          "text": "Lech Acai Granat (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_086",
+          "text": "Lech Arbuz Mięta (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_087",
+          "text": "Lech Free (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_088",
+          "text": "Lech Limonka Mięta (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_089",
+          "text": "Lech Premium 0,5 (ilosc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_090",
+          "text": "Lemoniada (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_091",
+          "text": "L'uette Fiano Di Puglia (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_092",
+          "text": "Martini bianco (ilosć butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_093",
+          "text": "Martini fiero (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_094",
+          "text": "Martini rosso (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_095",
+          "text": "Mataxa 12 (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_096",
+          "text": "Metaxa 5* (ilosć butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_097",
+          "text": "minimum po 3 gazowane zgrzewki na parter, I piętro, II piętr",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_098",
+          "text": "minimum po 3 niegazowane zgrzewki na parter, I piętro, II pi",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_099",
+          "text": "Monkey Shoulder",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_100",
+          "text": "Monkey Shoulder 0,7 (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_101",
+          "text": "muzykę wyłączyć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_102",
+          "text": "Nalewka pomarańczowa 0,25l (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_103",
+          "text": "Nalewka pomarańczowa 0,5l (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_104",
+          "text": "Nalewka wiśniowa 0,25l (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_105",
+          "text": "Nalewka wiśniowa 0,5 (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_106",
+          "text": "Nero D'avola Rosato Montalo rĂłżowe (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_107",
+          "text": "Odebrać depozyt",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_108",
+          "text": "Odebrać depozyt(przeliczyć)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_109",
+          "text": "Odpalić zmywarkę",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_110",
+          "text": "Odpiąć stoliki i leżaki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_111",
+          "text": "Odpiąć taras i otworzyć parasole",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_112",
+          "text": "Odwieść puste butelki po piwie ( posegregowane, pełne kraty)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_113",
+          "text": "ogarnąć blaty na stanowisku",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_114",
+          "text": "Opalić ekspres i warnik",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_115",
+          "text": "OprĂłżnić baniaki (oraz umyć) w wĂłzku z lodami",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_116",
+          "text": "OprĂłżnić śmietnik i popielniczkę na przeciwko palarni",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_117",
+          "text": "Otworzyć łazienkę",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_118",
+          "text": "Owoce w zamkniętych pojemnikach do lodĂłwki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_119",
+          "text": "oświetlenie na ścianach - wyłączyć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_120",
+          "text": "oświetlenie na ścianach - zostawić",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_121",
+          "text": "oświetlenie regałĂłw - wyłączyć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_122",
+          "text": "Pilsner Urquell (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_123",
+          "text": "Pinot Grigio Montalto white (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_124",
+          "text": "Plaża 32A Bar OTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_125",
+          "text": "Plaża 32A Barbeck OTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_126",
+          "text": "Plaża 32A Kasjer OOTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_127",
+          "text": "Plaża 32A Leżakowy OTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_128",
+          "text": "Plaża 33 Bar OTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_129",
+          "text": "Plaża 33 Barbeck OTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_130",
+          "text": "Plaża 33 Kasjer OTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_131",
+          "text": "Plaża 33 Kelner OTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_132",
+          "text": "Pobranie zapasu papieru toaletowego i ręcznikĂłw",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_133",
+          "text": "Podlać donice i trawy od strony alejki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_134",
+          "text": "poduszki - ułożyć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_135",
+          "text": "Poduszki na krzesła",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_136",
+          "text": "podłogę - zamieść",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_137",
+          "text": "Poggio Le Volpi białe (olość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_138",
+          "text": "Pokroić owoce",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_139",
+          "text": "Pomoc w zamknięciu tarasu(spinanie, parasole)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_140",
+          "text": "Pomocy leżakowego na start dnia",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_141",
+          "text": "Poprzecierać i ułożyć stoły na tarasie",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_142",
+          "text": "Porządek w zagrodzie",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_143",
+          "text": "Posprzątać bar - od strony sali",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_144",
+          "text": "posprzątać plac zabaw w środku",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_145",
+          "text": "Posprzątać popielniczkę + foto na grupe",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_146",
+          "text": "Posprzątać WC gości",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_147",
+          "text": "Posprzątać wydawki 1 i 2",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_148",
+          "text": "Posprzątać wydawki 2 i 3",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_149",
+          "text": "posy - przetrzeć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_150",
+          "text": "pozbierać smieci z tarasu i placu zabaw",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_151",
+          "text": "Pozbierać śmieci na plaży między budkami",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_152",
+          "text": "POZOSTAWIÄ† STANOWISKA CZYSTE",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_153",
+          "text": "projektor i TV - włączyć (fashion TV)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_154",
+          "text": "Prosseco 0,7 (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_155",
+          "text": "Prosseco 200ml",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_156",
+          "text": "przetrzeć blaty i kafelki na małej sali",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_157",
+          "text": "Przetrzeć modlitewnik z menu",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_158",
+          "text": "Przygotować blat i wydawki kasjera",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_159",
+          "text": "Przygotować lemoniade",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_160",
+          "text": "Przygotować mięte",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_161",
+          "text": "Przygotować mleko, syropy i kubki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_162",
+          "text": "Przygotować narzędzia do pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_163",
+          "text": "Przygotować owoce, sprawdzić dostępność mięty",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_164",
+          "text": "Przygotować wydawki 1 i 2",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_165",
+          "text": "Przygotować wydawki 2 i 3",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_166",
+          "text": "Przygotować wydawki(położyć etc.)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_167",
+          "text": "przykryć desery",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_168",
+          "text": "Przynieść desery",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_169",
+          "text": "Przynieść lĂłd",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_170",
+          "text": "Przyprawniki na stĂłl",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_171",
+          "text": "Prządek - zapas napoi(za lodĂłwkami)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_172",
+          "text": "rezerwacje na dany dzień - sprawdzić",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_173",
+          "text": "rozpalić kominek",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_174",
+          "text": "Rozwijanie markiz i rozkładanie parasoli",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_175",
+          "text": "Rozłożyć wĂłzki z naczyniami po śniadaniach",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_176",
+          "text": "Sailor Jerry (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_177",
+          "text": "SALA porządki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_178",
+          "text": "SALA pstryk",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_179",
+          "text": "Schować bitą śmietanę do lodĂłwki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_180",
+          "text": "Schować i zabezpieczyć lody",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_181",
+          "text": "Schować lemoniade",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_182",
+          "text": "schować lemoniadę",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_183",
+          "text": "Schować mleko do lodĂłwki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_184",
+          "text": "Schować poduszki do workĂłw",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_185",
+          "text": "Schować pomocnik",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_186",
+          "text": "Schować potykacze i modlitewnik(menu)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_187",
+          "text": "serwetki - uzupełnić",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_188",
+          "text": "Sierra Reposado (GOLD) (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_189",
+          "text": "Sierra Silver Teqilla (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_190",
+          "text": "skroić owoce",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_191",
+          "text": "skręcić wyciskarkę",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_192",
+          "text": "spisać zatowarowanie do 18:00",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_193",
+          "text": "Spiąć stoliki po zakończonym dniu pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_194",
+          "text": "Sprawdzić czy na stolikach są świeczki i przyprawniki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_195",
+          "text": "Sprawdzić czystość i ułożenie stolikĂłw i krzeseł",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_196",
+          "text": "Sprawdzić czystość lodĂłwek",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_197",
+          "text": "Sprawdzić czystość szkła",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_198",
+          "text": "Sprawdzić stan toalet i otworzyć",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_199",
+          "text": "Sprawdzić stan toalety",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_200",
+          "text": "Sprawdzić stany magazynowe budki(czy wszystko jest)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_201",
+          "text": "Sprawdzić wydolność kuchni",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_202",
+          "text": "Sprawdzić zatowarowanie (rolki papieru, kartki do rozliczeń)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_203",
+          "text": "Sprawdzić świeżość produktĂłw",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_204",
+          "text": "Sprite 0,5 (ilośc sztuk)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_205",
+          "text": "Sprzątnąć szatnie po zakończonym dniu pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_206",
+          "text": "Sprzątnąć taras (nadmiar piasku, śmieci)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_207",
+          "text": "sprzątnąć witrynę z ciastami",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_208",
+          "text": "Stawiamy krzesła na stoły",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_209",
+          "text": "stoliki - wytrzeć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_210",
+          "text": "stoły - wytrzeć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_211",
+          "text": "stoły na rezerwacje - rozstawić",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_212",
+          "text": "stoły na tarasie zgodnie z rewirami - ustawić",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_213",
+          "text": "stoły w restauracji - przetrzeć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_214",
+          "text": "sztućce rozłożyć do szuflad",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_215",
+          "text": "tablety - wszystkie podłączyć do ładowania",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_216",
+          "text": "TARAS porządki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_217",
+          "text": "Tequilla Salito Gold",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_218",
+          "text": "TERMINALE ODĹOĹ»YÄ† NA MIEJSCE + SPRAWDZIÄ† PAPIER  - WAĹ»NE",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_219",
+          "text": "Toalety porządek 11:00",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_220",
+          "text": "Toalety porządek 13:00",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_221",
+          "text": "Toalety porządek 15:00",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_222",
+          "text": "Toalety porządek 17:00",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_223",
+          "text": "Toalety porządek 19:00",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_224",
+          "text": "Tullamore dew 0,7  (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_225",
+          "text": "tv i projektor - wyłączyć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_226",
+          "text": "Ubrana koszulka firmowa",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_227",
+          "text": "Ubrać koszulke firmową",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_228",
+          "text": "Ubrać koszulkę firmową",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_229",
+          "text": "umyć bemary",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_230",
+          "text": "umyć blaty i zlewy",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_231",
+          "text": "umyć chłodziarkę w blacie, włączyć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_232",
+          "text": "umyć expres",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_233",
+          "text": "umyć gumy i przybory barmanskie",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_234",
+          "text": "Umyć podłogi",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_235",
+          "text": "umyć wyciskarkę",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_236",
+          "text": "Upewnienie się czy wszystkie leżakĂłw są zapięte",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_237",
+          "text": "upewnić się, że girlandy wzdłuż promenady są włączone",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_238",
+          "text": "Uporządkować menu",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_239",
+          "text": "Ustawić stoły według rewirĂłw na tarasie",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_240",
+          "text": "Uzbroić alarm",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_241",
+          "text": "UZUPEĹNIÄ† - sosy, herbatę, miĂłd, cukier",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_242",
+          "text": "UZUPEĹNIÄ† PĹATKI ĹšNIADANIOWE",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_243",
+          "text": "Uzupełnić braki (lody, wafle, serwetki)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_244",
+          "text": "uzupełnić desery",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_245",
+          "text": "uzupełnić kawę, herbatę",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_246",
+          "text": "Uzupełnić kubeczki i kubki do piwa",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_247",
+          "text": "Uzupełnić lody i wafle",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_248",
+          "text": "uzupełnić lodĂłwki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_249",
+          "text": "Uzupełnić lodĂłwki - napoje",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_250",
+          "text": "Uzupełnić lodĂłwki - piwo",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_251",
+          "text": "uzupełnić lodĂłwki, jeżeli brak to donieść",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_252",
+          "text": "Uzupełnić mus",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_253",
+          "text": "uzupełnić naczynia i sztućce",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_254",
+          "text": "Uzupełnić pojemnik na lĂłd",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_255",
+          "text": "Uzupełnić witryne z deserami",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_256",
+          "text": "Uzupełnić wodę w baniakach w wĂłzku z lodami",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_257",
+          "text": "Uzupełnić worki na śmieci wew. i zew.",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_258",
+          "text": "ułożyć gumy na barze",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_259",
+          "text": "Wild Turkey81  (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_260",
+          "text": "Winietki z nazwami deserĂłw",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_261",
+          "text": "Wino grzane",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_262",
+          "text": "wiszące żarĂłwki na sali włączyć (ustawić pokrętła na kropki)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_263",
+          "text": "Woda gazowana 0,5 (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_264",
+          "text": "Woda niegazowana 0,5 (ilośc butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_265",
+          "text": "Wszystkie parasole złożone na noc",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_266",
+          "text": "Wycześcić płuczkę do gałkownicy",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_267",
+          "text": "wyczyścić ekspress",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_268",
+          "text": "Wyczyścić i wyłączyć ekspres oraz warnik",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_269",
+          "text": "Wyczyścić i wyłączyć ekspress",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_270",
+          "text": "Wyczyścić płuczke do gałkownicy",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_271",
+          "text": "Wyczyścić zlew",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_272",
+          "text": "wydawkę - wytrzeć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_273",
+          "text": "Wykonać raporty",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_274",
+          "text": "Wykonać raporty( fiskalny i z termnalu)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_275",
+          "text": "wynieść brudny sprzęt na zmywak",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_276",
+          "text": "Wynieść śmieci",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_277",
+          "text": "Wyparzyć gume",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_278",
+          "text": "Wypełniono formularz",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_279",
+          "text": "Wyrzucić śmieci",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_280",
+          "text": "Wystawienie lodĂłwki z lodami i uzupełnienie",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_281",
+          "text": "Wystawienie menu",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_282",
+          "text": "Wystawienie pomocnika kelnerskiego",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_283",
+          "text": "Wystawić lody",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_284",
+          "text": "Wystawić modlitewnik(menu) i potykacze",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_285",
+          "text": "Wystwić i uzupełnić pomocnik kelnerski",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_286",
+          "text": "wyłączyc żarĂłwkę nad wejściem",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_287",
+          "text": "wyłączyć swiatło na korytarzach",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_288",
+          "text": "wyłączyć swiatło na zmywaku",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_289",
+          "text": "Wyłączyć zmywarkę, zostawiamy ją otwartą na noc",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_290",
+          "text": "Wyłączyć światła w lodĂłwkach",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_291",
+          "text": "Wyłączyć światłą w lodĂłwkach",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_292",
+          "text": "włożyć kieliszki do zamrażarki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_293",
+          "text": "Włożyć nowe worki na śmieci",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_294",
+          "text": "Włączyć ekspress",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_295",
+          "text": "włączyć światła na korytarzach",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_296",
+          "text": "włączyć żarĂłwkę nad wejściem",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_297",
+          "text": "Zabezpieczenie wszystkich leżakĂłw na noc",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_298",
+          "text": "Zabezpieczyć butelki ( alko, syropy) i schować do lodĂłwki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_299",
+          "text": "Zabezpieczyć butelki (slko,syropy)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_300",
+          "text": "zabezpieczyć owoce",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_301",
+          "text": "zamieść i umyć podłogę",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_302",
+          "text": "Zamieść podesty - wejście, przed budką, do łazinki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_303",
+          "text": "Zamknąć łazienkę",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_304",
+          "text": "Zapalić Aperol Spritz",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_305",
+          "text": "Zapalić śiane z alkoholami",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_306",
+          "text": "Zapalić światła we wszystkich lodĂłwkach",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_307",
+          "text": "zasłony - poprawić",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_308",
+          "text": "Założyć koszulkę pracowniczą",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_309",
+          "text": "Zdać depozyt, utarg i kartę w recepcji",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_310",
+          "text": "Zebrać wszystkie śmieci mieszane i wystawić na plaże",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_311",
+          "text": "Zgasić ściane z alko",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_312",
+          "text": "zgniatarka - foto na grupę",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_313",
+          "text": "Zresetować bonowniki",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_314",
+          "text": "Zrobić bitą śmietane",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_315",
+          "text": "Zrobić frappe",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_316",
+          "text": "Zrobić lemoniade",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_317",
+          "text": "Zrobić porządek w zagrodzie(zaplacze)",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_318",
+          "text": "Zrobić porządek w zlewie",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_319",
+          "text": "zrobić sour'a",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_320",
+          "text": "Zweryfikuj  3 losowe stanowiska leżakowe czy są w systemie",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_321",
+          "text": "Zwijamy markizy i składamy parasole",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_322",
+          "text": "zwisające żarĂłwki na sali - wyłączyć",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_323",
+          "text": "Ĺ»ubrĂłwka biała 0,5 (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_324",
+          "text": "Ĺ»ubrĂłwka czarna 0,7 (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_325",
+          "text": "Ĺ»ubrĂłwka z trawą 0,5 (ilość butelek)",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_326",
+          "text": "Ĺšmieci porządek wejście 32a plaża - 13:00",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_327",
+          "text": "Ĺšmieci porządek wejście 32a plaża - 15:00",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_328",
+          "text": "Ĺšmieci porządek wejście 32a plaża - 17:00",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_329",
+          "text": "Ĺšmieci porządek wejście 32a plaża - 19:00",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_330",
+          "text": "Ĺšmieci porządek wejście 33 plaża - 13:00",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_331",
+          "text": "Ĺšmieci porządek wejście 33 plaża - 15:00",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_332",
+          "text": "Ĺšmieci porządek wejście 33 plaża - 17:00",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_333",
+          "text": "Ĺšmieci porządek wejście 33 plaża - 19:00",
+          "type": "text"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_334",
+          "text": "śmieci - wynieść i po zgnieceniu wyrzucić do kubłĂłw",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_335",
+          "text": "śmietniki - foto na grupę",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_336",
+          "text": "świece na parapetach - zgasić",
+          "type": "yesno"
+        },
+        {
+          "id": "POMARA_CZOWA_PLA_A_337",
+          "text": "świece w WC - zgasić",
+          "type": "yesno"
+        }
+      ]
+    }
+  ],
+  "Budki": [],
+  "Dashboard": []
+}
