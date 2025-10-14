@@ -1,3 +1,4 @@
+// app/api/submit/route.ts
 import { NextResponse } from 'next/server'
 import { cookies } from 'next/headers'
 import { getSheets } from '@/lib/sheets'
@@ -5,19 +6,28 @@ import { getSheets } from '@/lib/sheets'
 export async function POST(req: Request) {
   try {
     const { area, checklistId, answers } = await req.json()
+
+    if (!area || !checklistId || !Array.isArray(answers)) {
+      return NextResponse.json(
+        { ok: false, error: 'Invalid payload' },
+        { status: 400 }
+      )
+    }
+
     const now = new Date()
     const date = now.toISOString().slice(0, 10)
     const userLogin = cookies().get('user_login')?.value || 'unknown'
 
-    const rows = (answers as any[]).map(a => [
+    // każdy wiersz: [timestamp, data, obszar, checklistId, pytanieId, pytanie, odpowiedź, kto]
+    const rows = answers.map((a: any) => [
       now.toISOString(),
       date,
       area,
-      checklistId,
-      a.questionId,
-      a.questionText,
+      String(checklistId),
+      String(a.questionId ?? ''),
+      String(a.questionText ?? ''),
       String(a.answer ?? ''),
-      userLogin
+      userLogin,
     ])
 
     const sheets = getSheets()
@@ -25,12 +35,18 @@ export async function POST(req: Request) {
       spreadsheetId: process.env.GOOGLE_SHEETS_SPREADSHEET_ID!,
       range: 'responses!A:H',
       valueInputOption: 'RAW',
-      requestBody: { values: rows }
+      requestBody: { values: rows },
     })
 
     return NextResponse.json({ ok: true })
-  } catch (e) {
-    console.error(e)
-    return NextResponse.json({ ok: false, error: 'write_failed' }, { status: 500 })
+  } catch (e: any) {
+    console.error('SUBMIT ERROR:', e)
+    const msg = e?.message || String(e)
+    return NextResponse.json({ ok: false, error: msg }, { status: 500 })
   }
+}
+
+// (opcjonalnie) szybki health-check GET – przyda się do testów ręcznych
+export async function GET() {
+  return NextResponse.json({ ok: true, hint: 'Use POST to submit' })
 }
