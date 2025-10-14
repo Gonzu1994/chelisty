@@ -43,8 +43,9 @@ export default function ChecklistPage({ params }: { params: { area: string; id: 
     e.preventDefault()
 
     // ✅ TS-safe: używamy ternary zamiast list.questions na sztywno
-    const yesNoRequired =
-      list ? list.questions.filter((q) => q.type === 'yesno' || q.type === 'boolean') : []
+   const yesNoRequired = (list?.questions ?? []).filter(
+  (q) => q.type === 'yesno' || q.type === 'boolean'
+) : []
 
     const anyMissing = yesNoRequired.some((q) => !ynAnswers[q.id] || ynAnswers[q.id] === '')
     if (anyMissing) {
