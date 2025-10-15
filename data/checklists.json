@@ -1,56 +1,2489 @@
 {
-  "Hotel": [
+  "Restauracja": [
     {
-      "id": "HOTEL_OPEN_01",
-      "title": "Otwarcie dzienne — hotel",
+      "id": "RESTAURACJA_POMARACZOWA_PLAA",
+      "title": "PomaraĹ„czowa PlaĹĽa",
       "questions": [
         {
           "id": "Q1",
-          "text": "Recepcja przygotowana?",
-          "type": "boolean"
+          "text": "lampy sufitowe na listwach - wĹ‚Ä…czyÄ‡",
+          "type": "yesno"
         },
         {
           "id": "Q2",
-          "text": "Stan kasy zgadza się?",
-          "type": "boolean"
+          "text": "oĹ›wietlenie na Ĺ›cianach - wyĹ‚Ä…czyÄ‡",
+          "type": "yesno"
         },
         {
           "id": "Q3",
-          "text": "Liczba wolnych pokoi",
-          "type": "number"
-        }
-      ]
-    }
-  ],
-  "Restauracja": [
-    {
-      "id": "REST_OPEN_01",
-      "title": "Otwarcie dzienne — restauracja",
-      "questions": [
-        {
-          "id": "Q1",
-          "text": "Kuchnia przygotowana?",
-          "type": "boolean"
+          "text": "projektor i TV - wĹ‚Ä…czyÄ‡ (fashion TV)",
+          "type": "yesno"
         },
         {
-          "id": "Q2",
-          "text": "Dostawy uzupełnione?",
-          "type": "boolean"
+          "id": "Q4",
+          "text": "rozpaliÄ‡ kominek",
+          "type": "yesno"
+        },
+        {
+          "id": "Q5",
+          "text": "wiszÄ…ce ĹĽarĂłwki na sali wĹ‚Ä…czyÄ‡ (ustawiÄ‡ pokrÄ™tĹ‚a na kropki)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q6",
+          "text": "wĹ‚Ä…czyÄ‡ Ĺ›wiatĹ‚a na korytarzach",
+          "type": "yesno"
+        },
+        {
+          "id": "Q7",
+          "text": "wĹ‚Ä…czyÄ‡ ĹĽarĂłwkÄ™ nad wejĹ›ciem",
+          "type": "yesno"
+        },
+        {
+          "id": "Q8",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q9",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q10",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q11",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q12",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q13",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q14",
+          "text": "SprawdziÄ‡ czy na stolikach sÄ… Ĺ›wieczki i przyprawniki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q15",
+          "text": "poduszki - uĹ‚oĹĽyÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q16",
+          "text": "posy - przetrzeÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q17",
+          "text": "stoliki - wytrzeÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q18",
+          "text": "zasĹ‚ony - poprawiÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q19",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q20",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q21",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q22",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q23",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q24",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q25",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q26",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q27",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q28",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q29",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q30",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q31",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q32",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q33",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q34",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q35",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q36",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q37",
+          "text": "RozĹ‚oĹĽyÄ‡ wĂłzki z naczyniami po Ĺ›niadaniach",
+          "type": "yesno"
+        },
+        {
+          "id": "Q38",
+          "text": "UZUPEĹNIÄ† - sosy, herbatÄ™, miĂłd, cukier",
+          "type": "yesno"
+        },
+        {
+          "id": "Q39",
+          "text": "UZUPEĹNIÄ† PĹATKI ĹšNIADANIOWE",
+          "type": "yesno"
+        },
+        {
+          "id": "Q40",
+          "text": "dopeĹ‚niÄ‡ warnik wodÄ…",
+          "type": "yesno"
+        },
+        {
+          "id": "Q41",
+          "text": "podĹ‚ogÄ™ - zamieĹ›Ä‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q42",
+          "text": "przetrzeÄ‡ blaty i kafelki na maĹ‚ej sali",
+          "type": "yesno"
+        },
+        {
+          "id": "Q43",
+          "text": "stoĹ‚y - wytrzeÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q44",
+          "text": "umyÄ‡ bemary",
+          "type": "yesno"
+        },
+        {
+          "id": "Q45",
+          "text": "uzupeĹ‚niÄ‡ naczynia i sztuÄ‡ce",
+          "type": "yesno"
+        },
+        {
+          "id": "Q46",
+          "text": "wyczyĹ›ciÄ‡ ekspress",
+          "type": "yesno"
+        },
+        {
+          "id": "Q47",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q48",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q49",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q50",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q51",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q52",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q53",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q54",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q55",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q56",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q57",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q58",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q59",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q60",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q61",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q62",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q63",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q64",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q65",
+          "text": "1. liĹ›cie i papierki na tarasie - posprzÄ…taÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q66",
+          "text": "2. krzesĹ‚a na tarasie  - przetrzeÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q67",
+          "text": "3. pleksi taras - wytrzeÄ‡ rosÄ™ Ĺ›ciÄ…gaczkÄ… jeĹ›li jest rosa",
+          "type": "yesno"
+        },
+        {
+          "id": "Q68",
+          "text": "9. plac zabaw - posprzÄ…taÄ‡ Ĺ›mieci i uporzÄ…dkowaÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q69",
+          "text": "Rozwijanie markiz i rozkĹ‚adanie parasoli",
+          "type": "yesno"
+        },
+        {
+          "id": "Q70",
+          "text": "Wystawienie lodĂłwki z lodami i uzupeĹ‚nienie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q71",
+          "text": "Wystawienie menu",
+          "type": "yesno"
+        },
+        {
+          "id": "Q72",
+          "text": "Wystawienie pomocnika kelnerskiego",
+          "type": "yesno"
+        },
+        {
+          "id": "Q73",
+          "text": "girlandy na markizie - sprawdĹş czy wĹ‚Ä…czone",
+          "type": "yesno"
+        },
+        {
+          "id": "Q74",
+          "text": "girlandy wkoĹ‚o restauracji - sprawdĹş czy wĹ‚Ä…czone",
+          "type": "yesno"
+        },
+        {
+          "id": "Q75",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q76",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q77",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q78",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q79",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q80",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q81",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q82",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q83",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q84",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q85",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q86",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q87",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q88",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q89",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q90",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q91",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q92",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q93",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q94",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q95",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q96",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q97",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q98",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q99",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q100",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q101",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q102",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q103",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q104",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q105",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q106",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q107",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q108",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q109",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q110",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q111",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q112",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q113",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q114",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q115",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q116",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q117",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q118",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q119",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q120",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q121",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q122",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q123",
+          "text": "OprĂłĹĽniÄ‡ Ĺ›mietnik i popielniczkÄ™ na przeciwko palarni",
+          "type": "yesno"
+        },
+        {
+          "id": "Q124",
+          "text": "pozbieraÄ‡ smieci z tarasu i placu zabaw",
+          "type": "yesno"
+        },
+        {
+          "id": "Q125",
+          "text": "stoĹ‚y na tarasie zgodnie z rewirami - ustawiÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q126",
+          "text": "lampy sufitowe na listwach - wyĹ‚Ä…czyÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q127",
+          "text": "muzykÄ™ wyĹ‚Ä…czyÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q128",
+          "text": "oĹ›wietlenie regaĹ‚Ăłw - wyĹ‚Ä…czyÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q129",
+          "text": "tv i projektor - wyĹ‚Ä…czyÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q130",
+          "text": "wyĹ‚Ä…czyc ĹĽarĂłwkÄ™ nad wejĹ›ciem",
+          "type": "yesno"
+        },
+        {
+          "id": "Q131",
+          "text": "wyĹ‚Ä…czyÄ‡ swiatĹ‚o na korytarzach",
+          "type": "yesno"
+        },
+        {
+          "id": "Q132",
+          "text": "wyĹ‚Ä…czyÄ‡ swiatĹ‚o na zmywaku",
+          "type": "yesno"
+        },
+        {
+          "id": "Q133",
+          "text": "zwisajÄ…ce ĹĽarĂłwki na sali - wyĹ‚Ä…czyÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q134",
+          "text": "Ĺ›wiece na parapetach - zgasiÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q135",
+          "text": "Ĺ›wiece w WC - zgasiÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q136",
+          "text": "oĹ›wietlenie na Ĺ›cianach - zostawiÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q137",
+          "text": "upewniÄ‡ siÄ™, ĹĽe girlandy wzdĹ‚uĹĽ promenady sÄ… wĹ‚Ä…czone",
+          "type": "yesno"
+        },
+        {
+          "id": "Q138",
+          "text": "Chowamy pomocnik kelnerski i menu",
+          "type": "yesno"
+        },
+        {
+          "id": "Q139",
+          "text": "PosprzÄ…taÄ‡ popielniczkÄ™ + foto na grupe",
+          "type": "yesno"
+        },
+        {
+          "id": "Q140",
+          "text": "UstawiÄ‡ stoĹ‚y wedĹ‚ug rewirĂłw na tarasie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q141",
+          "text": "Zwijamy markizy i skĹ‚adamy parasole",
+          "type": "yesno"
+        },
+        {
+          "id": "Q142",
+          "text": "bar - wytrzeÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q143",
+          "text": "drzwi wejĹ›ciowe w tym przy placu zabaw - zamknÄ…Ä‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q144",
+          "text": "posprzÄ…taÄ‡ plac zabaw w Ĺ›rodku",
+          "type": "yesno"
+        },
+        {
+          "id": "Q145",
+          "text": "wydawkÄ™ - wytrzeÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q146",
+          "text": "zgniatarka - foto na grupÄ™",
+          "type": "yesno"
+        },
+        {
+          "id": "Q147",
+          "text": "Ĺ›mieci - wynieĹ›Ä‡ i po zgnieceniu wyrzuciÄ‡ do kubĹ‚Ăłw",
+          "type": "yesno"
+        },
+        {
+          "id": "Q148",
+          "text": "Ĺ›mietniki - foto na grupÄ™",
+          "type": "yesno"
+        },
+        {
+          "id": "Q149",
+          "text": "PosprzÄ…taÄ‡ bar - od strony sali",
+          "type": "yesno"
+        },
+        {
+          "id": "Q150",
+          "text": "Stawiamy krzesĹ‚a na stoĹ‚y",
+          "type": "yesno"
+        },
+        {
+          "id": "Q151",
+          "text": "TERMINALE ODĹOĹ»YÄ† NA MIEJSCE + SPRAWDZIÄ† PAPIER  - WAĹ»NE",
+          "type": "yesno"
+        },
+        {
+          "id": "Q152",
+          "text": "UporzÄ…dkowaÄ‡ menu",
+          "type": "yesno"
+        },
+        {
+          "id": "Q153",
+          "text": "donieĹ›Ä‡ drzewo i drzazgi do kominka",
+          "type": "yesno"
+        },
+        {
+          "id": "Q154",
+          "text": "ekspres Ĺ›niadaniowy - oprĂłĹĽniÄ‡ szufladÄ™ i fusy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q155",
+          "text": "serwetki - uzupeĹ‚niÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q156",
+          "text": "stoĹ‚y w restauracji - przetrzeÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q157",
+          "text": "sztuÄ‡ce rozĹ‚oĹĽyÄ‡ do szuflad",
+          "type": "yesno"
+        },
+        {
+          "id": "Q158",
+          "text": "tablety - wszystkie podĹ‚Ä…czyÄ‡ do Ĺ‚adowania",
+          "type": "yesno"
+        },
+        {
+          "id": "Q159",
+          "text": "Czy nie ma pustych leĹĽakĂłw odpiÄ™tych",
+          "type": "yesno"
+        },
+        {
+          "id": "Q160",
+          "text": "Czy nie ma Ĺ›mieci na plaĹĽy/wokĂłĹ‚ budki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q161",
+          "text": "Czy sÄ… robione zdjÄ™cia toalet",
+          "type": "yesno"
+        },
+        {
+          "id": "Q162",
+          "text": "Czy wszyscy sÄ… na stanowisku pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q163",
+          "text": "PorzÄ…dek w zagrodzie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q164",
+          "text": "SprawdziÄ‡ stany magazynowe budki(czy wszystko jest)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q165",
+          "text": "Zweryfikuj  3 losowe stanowiska leĹĽakowe czy sÄ… w systemie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q166",
+          "text": "minimum po 3 gazowane zgrzewki na parter, I piÄ™tro, II piÄ™tr",
+          "type": "yesno"
+        },
+        {
+          "id": "Q167",
+          "text": "minimum po 3 niegazowane zgrzewki na parter, I piÄ™tro, II pi",
+          "type": "yesno"
+        },
+        {
+          "id": "Q168",
+          "text": "Czy nie ma pustych leĹĽakĂłw odpiÄ™tych",
+          "type": "yesno"
+        },
+        {
+          "id": "Q169",
+          "text": "Czy nie ma Ĺ›mieci na plaĹĽy/wokĂłĹ‚ budki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q170",
+          "text": "Czy sÄ… robione zdjÄ™cia toalet",
+          "type": "yesno"
+        },
+        {
+          "id": "Q171",
+          "text": "Czy wszyscy sÄ… na stanowisku pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q172",
+          "text": "PorzÄ…dek w zagrodzie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q173",
+          "text": "SprawdziÄ‡ stany magazynowe budki(czy wszystko jest)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q174",
+          "text": "Zweryfikuj  3 losowe stanowiska leĹĽakowe czy sÄ… w systemie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q175",
+          "text": "Czy nie ma pustych leĹĽakĂłw odpiÄ™tych",
+          "type": "yesno"
+        },
+        {
+          "id": "Q176",
+          "text": "Czy nie ma Ĺ›mieci na plaĹĽy/wokĂłĹ‚ budki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q177",
+          "text": "Czy sÄ… robione zdjÄ™cia toalet",
+          "type": "yesno"
+        },
+        {
+          "id": "Q178",
+          "text": "Czy wszyscy sÄ… na stanowisku pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q179",
+          "text": "PorzÄ…dek w zagrodzie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q180",
+          "text": "SprawdziÄ‡ stany magazynowe budki(czy wszystko jest)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q181",
+          "text": "Zweryfikuj  3 losowe stanowiska leĹĽakowe czy sÄ… w systemie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q182",
+          "text": "Czy nie ma pustych leĹĽakĂłw odpiÄ™tych",
+          "type": "yesno"
+        },
+        {
+          "id": "Q183",
+          "text": "Czy nie ma Ĺ›mieci na plaĹĽy/wokĂłĹ‚ budki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q184",
+          "text": "Czy sÄ… robione zdjÄ™cia toalet",
+          "type": "yesno"
+        },
+        {
+          "id": "Q185",
+          "text": "Czy wszyscy sÄ… na stanowisku pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q186",
+          "text": "PorzÄ…dek w zagrodzie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q187",
+          "text": "SprawdziÄ‡ stany magazynowe budki(czy wszystko jest)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q188",
+          "text": "Zweryfikuj  3 losowe stanowiska leĹĽakowe czy sÄ… w systemie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q189",
+          "text": "Czy nie ma pustych leĹĽakĂłw odpiÄ™tych",
+          "type": "yesno"
+        },
+        {
+          "id": "Q190",
+          "text": "Czy nie ma Ĺ›mieci na plaĹĽy/wokĂłĹ‚ budki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q191",
+          "text": "Czy sÄ… robione zdjÄ™cia toalet",
+          "type": "yesno"
+        },
+        {
+          "id": "Q192",
+          "text": "Czy wszyscy sÄ… na stanowisku pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q193",
+          "text": "PorzÄ…dek w zagrodzie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q194",
+          "text": "SprawdziÄ‡ stany magazynowe budki(czy wszystko jest)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q195",
+          "text": "Zweryfikuj  3 losowe stanowiska leĹĽakowe czy sÄ… w systemie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q196",
+          "text": "info. o rezerwacji na stoĹ‚ach - ustawiÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q197",
+          "text": "rezerwacje na dany dzieĹ„ - sprawdziÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q198",
+          "text": "stoĹ‚y na rezerwacje - rozstawiÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q199",
+          "text": "Winietki z nazwami deserĂłw",
+          "type": "yesno"
+        },
+        {
+          "id": "Q200",
+          "text": "ZapaliÄ‡ Ĺ›iane z alkoholami",
+          "type": "yesno"
+        },
+        {
+          "id": "Q201",
+          "text": "dolaÄ‡ mus, miĂłd",
+          "type": "yesno"
+        },
+        {
+          "id": "Q202",
+          "text": "donieĹ›Ä‡ miÄ™tÄ™, rozmaryn, imbir",
+          "type": "yesno"
+        },
+        {
+          "id": "Q203",
+          "text": "donieĹ›Ä‡ mleko (normalne i bez laktozy)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q204",
+          "text": "donieĹ›Ä‡ szkĹ‚o",
+          "type": "yesno"
+        },
+        {
+          "id": "Q205",
+          "text": "skroiÄ‡ owoce",
+          "type": "yesno"
+        },
+        {
+          "id": "Q206",
+          "text": "skrÄ™ciÄ‡ wyciskarkÄ™",
+          "type": "yesno"
+        },
+        {
+          "id": "Q207",
+          "text": "sprzÄ…tnÄ…Ä‡ witrynÄ™ z ciastami",
+          "type": "yesno"
+        },
+        {
+          "id": "Q208",
+          "text": "uzupeĹ‚niÄ‡ desery",
+          "type": "yesno"
+        },
+        {
+          "id": "Q209",
+          "text": "uzupeĹ‚niÄ‡ kawÄ™, herbatÄ™",
+          "type": "yesno"
+        },
+        {
+          "id": "Q210",
+          "text": "uĹ‚oĹĽyÄ‡ gumy na barze",
+          "type": "yesno"
+        },
+        {
+          "id": "Q211",
+          "text": "wĹ‚oĹĽyÄ‡ kieliszki do zamraĹĽarki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q212",
+          "text": "zrobiÄ‡ sour'a",
+          "type": "yesno"
+        },
+        {
+          "id": "Q213",
+          "text": "WynieĹ›Ä‡ Ĺ›mieci",
+          "type": "yesno"
+        },
+        {
+          "id": "Q214",
+          "text": "ZgasiÄ‡ Ĺ›ciane z alko",
+          "type": "yesno"
+        },
+        {
+          "id": "Q215",
+          "text": "doniesc drewno i rozpaĹ‚kÄ™",
+          "type": "yesno"
+        },
+        {
+          "id": "Q216",
+          "text": "donieĹ›Ä‡ owoce",
+          "type": "yesno"
+        },
+        {
+          "id": "Q217",
+          "text": "przykryÄ‡ desery",
+          "type": "yesno"
+        },
+        {
+          "id": "Q218",
+          "text": "umyÄ‡ blaty i zlewy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q219",
+          "text": "umyÄ‡ chĹ‚odziarkÄ™ w blacie, wĹ‚Ä…czyÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q220",
+          "text": "umyÄ‡ expres",
+          "type": "yesno"
+        },
+        {
+          "id": "Q221",
+          "text": "umyÄ‡ wyciskarkÄ™",
+          "type": "yesno"
+        },
+        {
+          "id": "Q222",
+          "text": "uzupeĹ‚niÄ‡ lodĂłwki, jeĹĽeli brak to donieĹ›Ä‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q223",
+          "text": "wynieĹ›Ä‡ brudny sprzÄ™t na zmywak",
+          "type": "yesno"
+        },
+        {
+          "id": "Q224",
+          "text": "zamieĹ›Ä‡ i umyÄ‡ podĹ‚ogÄ™",
+          "type": "yesno"
+        },
+        {
+          "id": "Q225",
+          "text": "BAR otwarcie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q226",
+          "text": "PlaĹĽa 32A Bar OTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "Q227",
+          "text": "PlaĹĽa 32A Barbeck OTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "Q228",
+          "text": "PlaĹĽa 32A Kasjer OOTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "Q229",
+          "text": "PlaĹĽa 32A LeĹĽakowy OTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "Q230",
+          "text": "PlaĹĽa 33 Bar OTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "Q231",
+          "text": "PlaĹĽa 33 Barbeck OTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "Q232",
+          "text": "PlaĹĽa 33 Kasjer OTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "Q233",
+          "text": "PlaĹĽa 33 Kelner OTWARCIE",
+          "type": "yesno"
+        },
+        {
+          "id": "Q234",
+          "text": "SALA porzÄ…dki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q235",
+          "text": "SALA pstryk",
+          "type": "yesno"
+        },
+        {
+          "id": "Q236",
+          "text": "TARAS porzÄ…dki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q237",
+          "text": "PrzygotowaÄ‡ lemoniade",
+          "type": "yesno"
+        },
+        {
+          "id": "Q238",
+          "text": "PrzygotowaÄ‡ narzÄ™dzia do pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q239",
+          "text": "PrzygotowaÄ‡ owoce, sprawdziÄ‡ dostÄ™pnoĹ›Ä‡ miÄ™ty",
+          "type": "yesno"
+        },
+        {
+          "id": "Q240",
+          "text": "PrzygotowaÄ‡ wydawki(poĹ‚oĹĽyÄ‡ etc.)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q241",
+          "text": "SprawdziÄ‡ czystoĹ›Ä‡ lodĂłwek",
+          "type": "yesno"
+        },
+        {
+          "id": "Q242",
+          "text": "SprawdziÄ‡ Ĺ›wieĹĽoĹ›Ä‡ produktĂłw",
+          "type": "yesno"
+        },
+        {
+          "id": "Q243",
+          "text": "UzupeĹ‚niÄ‡ pojemnik na lĂłd",
+          "type": "yesno"
+        },
+        {
+          "id": "Q244",
+          "text": "ZaĹ‚oĹĽyÄ‡ koszulkÄ™ pracowniczÄ…",
+          "type": "yesno"
+        },
+        {
+          "id": "Q245",
+          "text": "OdwieĹşÄ‡ puste butelki po piwie ( posegregowane, peĹ‚ne kraty)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q246",
+          "text": "WyrzuciÄ‡ Ĺ›mieci",
+          "type": "yesno"
+        },
+        {
+          "id": "Q247",
+          "text": "ZabezpieczyÄ‡ butelki (slko,syropy)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q248",
+          "text": "dolaÄ‡ soki do piwa",
+          "type": "yesno"
+        },
+        {
+          "id": "Q249",
+          "text": "ogarnÄ…Ä‡ blaty na stanowisku",
+          "type": "yesno"
+        },
+        {
+          "id": "Q250",
+          "text": "schowaÄ‡ lemoniadÄ™",
+          "type": "yesno"
+        },
+        {
+          "id": "Q251",
+          "text": "spisaÄ‡ zatowarowanie do 18:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q252",
+          "text": "umyÄ‡ gumy i przybory barmanskie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q253",
+          "text": "uzupeĹ‚niÄ‡ lodĂłwki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q254",
+          "text": "zabezpieczyÄ‡ owoce",
+          "type": "yesno"
+        },
+        {
+          "id": "Q255",
+          "text": "Pomocy leĹĽakowego na start dnia",
+          "type": "yesno"
+        },
+        {
+          "id": "Q256",
+          "text": "PrzygotowaÄ‡ mleko, syropy i kubki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q257",
+          "text": "UzupeĹ‚niÄ‡ lody i wafle",
+          "type": "yesno"
+        },
+        {
+          "id": "Q258",
+          "text": "WyczeĹ›ciÄ‡ pĹ‚uczkÄ™ do gaĹ‚kownicy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q259",
+          "text": "WĹ‚Ä…czyÄ‡ ekspress",
+          "type": "yesno"
+        },
+        {
+          "id": "Q260",
+          "text": "ZamieĹ›Ä‡ podesty - wejĹ›cie, przed budkÄ…, do Ĺ‚azinki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q261",
+          "text": "ZrobiÄ‡ frappe",
+          "type": "yesno"
+        },
+        {
+          "id": "Q262",
+          "text": "DonieĹ›Ä‡ lody z mroĹşni",
+          "type": "yesno"
+        },
+        {
+          "id": "Q263",
+          "text": "UzupeĹ‚niÄ‡ kubeczki i kubki do piwa",
+          "type": "yesno"
+        },
+        {
+          "id": "Q264",
+          "text": "WyczyĹ›ciÄ‡ i wyĹ‚Ä…czyÄ‡ ekspress",
+          "type": "yesno"
+        },
+        {
+          "id": "Q265",
+          "text": "WyczyĹ›ciÄ‡ pĹ‚uczke do gaĹ‚kownicy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q266",
+          "text": "ZrobiÄ‡ porzÄ…dek w zagrodzie(zaplacze)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q267",
+          "text": "ZrobiÄ‡ porzÄ…dek w zlewie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q268",
+          "text": "OdpiÄ…Ä‡ taras i otworzyÄ‡ parasole",
+          "type": "yesno"
+        },
+        {
+          "id": "Q269",
+          "text": "Pobranie zapasu papieru toaletowego i rÄ™cznikĂłw",
+          "type": "yesno"
+        },
+        {
+          "id": "Q270",
+          "text": "PozbieraÄ‡ Ĺ›mieci na plaĹĽy miÄ™dzy budkami",
+          "type": "yesno"
+        },
+        {
+          "id": "Q271",
+          "text": "SprawdziÄ‡ stan toalet i otworzyÄ‡",
+          "type": "yesno"
+        },
+        {
+          "id": "Q272",
+          "text": "Ubrana koszulka firmowa",
+          "type": "yesno"
+        },
+        {
+          "id": "Q273",
+          "text": "Upewnienie siÄ™ czy wszystkie leĹĽakĂłw sÄ… zapiÄ™te",
+          "type": "yesno"
+        },
+        {
+          "id": "Q274",
+          "text": "Wszystkie parasole zĹ‚oĹĽone na noc",
+          "type": "yesno"
+        },
+        {
+          "id": "Q275",
+          "text": "WynieĹ›Ä‡ Ĺ›mieci",
+          "type": "yesno"
+        },
+        {
+          "id": "Q276",
+          "text": "Zabezpieczenie wszystkich leĹĽakĂłw na noc",
+          "type": "yesno"
+        },
+        {
+          "id": "Q277",
+          "text": "OdebraÄ‡ depozyt(przeliczyÄ‡)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q278",
+          "text": "PoprzecieraÄ‡ i uĹ‚oĹĽyÄ‡ stoĹ‚y na tarasie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q279",
+          "text": "PrzetrzeÄ‡ modlitewnik z menu",
+          "type": "yesno"
+        },
+        {
+          "id": "Q280",
+          "text": "PrzygotowaÄ‡ blat i wydawki kasjera",
+          "type": "yesno"
+        },
+        {
+          "id": "Q281",
+          "text": "SprawdziÄ‡ zatowarowanie (rolki papieru, kartki do rozliczeĹ„)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q282",
+          "text": "UbraÄ‡ koszulke firmowÄ…",
+          "type": "yesno"
+        },
+        {
+          "id": "Q283",
+          "text": "UzupeĹ‚niÄ‡ worki na Ĺ›mieci wew. i zew.",
+          "type": "yesno"
+        },
+        {
+          "id": "Q284",
+          "text": "ZapaliÄ‡ Aperol Spritz",
+          "type": "yesno"
+        },
+        {
+          "id": "Q285",
+          "text": "Pomoc w zamkniÄ™ciu tarasu(spinanie, parasole)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q286",
+          "text": "PrzÄ…dek - zapas napoi(za lodĂłwkami)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q287",
+          "text": "UzbroiÄ‡ alarm",
+          "type": "yesno"
+        },
+        {
+          "id": "Q288",
+          "text": "WykonaÄ‡ raporty",
+          "type": "yesno"
+        },
+        {
+          "id": "Q289",
+          "text": "WyĹ‚Ä…czyÄ‡ Ĺ›wiatĹ‚Ä… w lodĂłwkach",
+          "type": "yesno"
+        },
+        {
+          "id": "Q290",
+          "text": "OdpaliÄ‡ zmywarkÄ™",
+          "type": "yesno"
+        },
+        {
+          "id": "Q291",
+          "text": "PokroiÄ‡ owoce",
+          "type": "yesno"
+        },
+        {
+          "id": "Q292",
+          "text": "PrzygotowaÄ‡ miÄ™te",
+          "type": "yesno"
+        },
+        {
+          "id": "Q293",
+          "text": "PrzygotowaÄ‡ narzÄ™dzia do pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q294",
+          "text": "PrzygotowaÄ‡ wydawki 1 i 2",
+          "type": "yesno"
+        },
+        {
+          "id": "Q295",
+          "text": "PrzynieĹ›Ä‡ desery",
+          "type": "yesno"
+        },
+        {
+          "id": "Q296",
+          "text": "PrzynieĹ›Ä‡ lĂłd",
+          "type": "yesno"
+        },
+        {
+          "id": "Q297",
+          "text": "SprawdziÄ‡ czystoĹ›Ä‡ szkĹ‚a",
+          "type": "yesno"
+        },
+        {
+          "id": "Q298",
+          "text": "SprawdziÄ‡ Ĺ›wieĹĽoĹ›Ä‡ produktĂłw",
+          "type": "yesno"
+        },
+        {
+          "id": "Q299",
+          "text": "UzupeĹ‚niÄ‡ mus",
+          "type": "yesno"
+        },
+        {
+          "id": "Q300",
+          "text": "ZaĹ‚oĹĽyÄ‡ koszulkÄ™ pracowniczÄ…",
+          "type": "yesno"
+        },
+        {
+          "id": "Q301",
+          "text": "ZrobiÄ‡ bitÄ… Ĺ›mietane",
+          "type": "yesno"
+        },
+        {
+          "id": "Q302",
+          "text": "ZrobiÄ‡ lemoniade",
+          "type": "yesno"
+        },
+        {
+          "id": "Q303",
+          "text": "DatowaÄ‡ wszystkie otwarte produkty",
+          "type": "yesno"
+        },
+        {
+          "id": "Q304",
+          "text": "DolaÄ‡ soki do piwa",
+          "type": "yesno"
+        },
+        {
+          "id": "Q305",
+          "text": "OdwieĹşÄ‡ puste butelki po piwie ( posegregowane, peĹ‚ne kraty)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q306",
+          "text": "Owoce w zamkniÄ™tych pojemnikach do lodĂłwki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q307",
+          "text": "POZOSTAWIÄ† STANOWISKA CZYSTE",
+          "type": "yesno"
+        },
+        {
+          "id": "Q308",
+          "text": "PosprzÄ…taÄ‡ wydawki 1 i 2",
+          "type": "yesno"
+        },
+        {
+          "id": "Q309",
+          "text": "SchowaÄ‡ bitÄ… Ĺ›mietanÄ™ do lodĂłwki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q310",
+          "text": "SchowaÄ‡ lemoniade",
+          "type": "yesno"
+        },
+        {
+          "id": "Q311",
+          "text": "SchowaÄ‡ mleko do lodĂłwki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q312",
+          "text": "SpisaÄ‡ zatowarowanie do 18:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q313",
+          "text": "UmyÄ‡ podĹ‚ogi",
+          "type": "yesno"
+        },
+        {
+          "id": "Q314",
+          "text": "UzupeĹ‚niÄ‡ lodĂłwki - piwo",
+          "type": "yesno"
+        },
+        {
+          "id": "Q315",
+          "text": "WyczyĹ›ciÄ‡ zlew",
+          "type": "yesno"
+        },
+        {
+          "id": "Q316",
+          "text": "WyparzyÄ‡ gume",
+          "type": "yesno"
+        },
+        {
+          "id": "Q317",
+          "text": "ZabezpieczyÄ‡ butelki ( alko, syropy) i schowaÄ‡ do lodĂłwki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q318",
+          "text": "OdebraÄ‡ depozyt",
+          "type": "yesno"
+        },
+        {
+          "id": "Q319",
+          "text": "OpaliÄ‡ ekspres i warnik",
+          "type": "yesno"
+        },
+        {
+          "id": "Q320",
+          "text": "PrzygotowaÄ‡ wydawki 2 i 3",
+          "type": "yesno"
+        },
+        {
+          "id": "Q321",
+          "text": "SprawdziÄ‡ stan toalety",
+          "type": "yesno"
+        },
+        {
+          "id": "Q322",
+          "text": "UbraÄ‡ koszulkÄ™ firmowÄ…",
+          "type": "yesno"
+        },
+        {
+          "id": "Q323",
+          "text": "UzupeĹ‚niÄ‡ witryne z deserami",
+          "type": "yesno"
+        },
+        {
+          "id": "Q324",
+          "text": "WystawiÄ‡ modlitewnik(menu) i potykacze",
+          "type": "yesno"
+        },
+        {
+          "id": "Q325",
+          "text": "ZapaliÄ‡ Ĺ›wiatĹ‚a we wszystkich lodĂłwkach",
+          "type": "yesno"
+        },
+        {
+          "id": "Q326",
+          "text": "ZresetowaÄ‡ bonowniki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q327",
+          "text": "Datowanie mleka, sosĂłw i syropĂłw",
+          "type": "yesno"
+        },
+        {
+          "id": "Q328",
+          "text": "PosprzÄ…taÄ‡ wydawki 2 i 3",
+          "type": "yesno"
+        },
+        {
+          "id": "Q329",
+          "text": "SprzÄ…tnÄ…Ä‡ szatnie po zakoĹ„czonym dniu pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q330",
+          "text": "UzbroiÄ‡ alarm",
+          "type": "yesno"
+        },
+        {
+          "id": "Q331",
+          "text": "UzupeĹ‚niÄ‡ lodĂłwki - napoje",
+          "type": "yesno"
+        },
+        {
+          "id": "Q332",
+          "text": "WyczyĹ›ciÄ‡ i wyĹ‚Ä…czyÄ‡ ekspres oraz warnik",
+          "type": "yesno"
+        },
+        {
+          "id": "Q333",
+          "text": "WyczyĹ›ciÄ‡ zlew",
+          "type": "yesno"
+        },
+        {
+          "id": "Q334",
+          "text": "WykonaÄ‡ raporty( fiskalny i z termnalu)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q335",
+          "text": "WyĹ‚Ä…czyÄ‡ Ĺ›wiatĹ‚a w lodĂłwkach",
+          "type": "yesno"
+        },
+        {
+          "id": "Q336",
+          "text": "ZdaÄ‡ depozyt, utarg i kartÄ™ w recepcji",
+          "type": "yesno"
+        },
+        {
+          "id": "Q337",
+          "text": "OdpiÄ…Ä‡ stoliki i leĹĽaki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q338",
+          "text": "OtworzyÄ‡ Ĺ‚azienkÄ™",
+          "type": "yesno"
+        },
+        {
+          "id": "Q339",
+          "text": "Poduszki na krzesĹ‚a",
+          "type": "yesno"
+        },
+        {
+          "id": "Q340",
+          "text": "Przyprawniki na stĂłl",
+          "type": "yesno"
+        },
+        {
+          "id": "Q341",
+          "text": "SprawdziÄ‡ czystoĹ›Ä‡ i uĹ‚oĹĽenie stolikĂłw i krzeseĹ‚",
+          "type": "yesno"
+        },
+        {
+          "id": "Q342",
+          "text": "SprzÄ…tnÄ…Ä‡ taras (nadmiar piasku, Ĺ›mieci)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q343",
+          "text": "UzupeĹ‚niÄ‡ braki (lody, wafle, serwetki)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q344",
+          "text": "UzupeĹ‚niÄ‡ wodÄ™ w baniakach w wĂłzku z lodami",
+          "type": "yesno"
+        },
+        {
+          "id": "Q345",
+          "text": "WystawiÄ‡ lody",
+          "type": "yesno"
+        },
+        {
+          "id": "Q346",
+          "text": "WystwiÄ‡ i uzupeĹ‚niÄ‡ pomocnik kelnerski",
+          "type": "yesno"
+        },
+        {
+          "id": "Q347",
+          "text": "WĹ‚oĹĽyÄ‡ nowe worki na Ĺ›mieci",
+          "type": "yesno"
+        },
+        {
+          "id": "Q348",
+          "text": "ZaĹ‚oĹĽyÄ‡ koszulkÄ™ pracowniczÄ…",
+          "type": "yesno"
+        },
+        {
+          "id": "Q349",
+          "text": "OprĂłĹĽniÄ‡ baniaki (oraz umyÄ‡) w wĂłzku z lodami",
+          "type": "yesno"
+        },
+        {
+          "id": "Q350",
+          "text": "PodlaÄ‡ donice i trawy od strony alejki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q351",
+          "text": "PosprzÄ…taÄ‡ WC goĹ›ci",
+          "type": "yesno"
+        },
+        {
+          "id": "Q352",
+          "text": "SchowaÄ‡ i zabezpieczyÄ‡ lody",
+          "type": "yesno"
+        },
+        {
+          "id": "Q353",
+          "text": "SchowaÄ‡ poduszki do workĂłw",
+          "type": "yesno"
+        },
+        {
+          "id": "Q354",
+          "text": "SchowaÄ‡ pomocnik",
+          "type": "yesno"
+        },
+        {
+          "id": "Q355",
+          "text": "SchowaÄ‡ potykacze i modlitewnik(menu)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q356",
+          "text": "SpiÄ…Ä‡ stoliki po zakoĹ„czonym dniu pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q357",
+          "text": "WyĹ‚Ä…czyÄ‡ zmywarkÄ™, zostawiamy jÄ… otwartÄ… na noc",
+          "type": "yesno"
+        },
+        {
+          "id": "Q358",
+          "text": "ZamknÄ…Ä‡ Ĺ‚azienkÄ™",
+          "type": "yesno"
+        },
+        {
+          "id": "Q359",
+          "text": "ZebraÄ‡ wszystkie Ĺ›mieci mieszane i wystawiÄ‡ na plaĹĽe",
+          "type": "yesno"
+        },
+        {
+          "id": "Q360",
+          "text": "Burn 0,25 (iloĹ›Ä‡ sztuk)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q361",
+          "text": "Cappy 0,33 jabĹ‚ko (iloĹ›Ä‡ sztuk)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q362",
+          "text": "Cappy 0,33 pomaraĹ„cza (iloĹ›c sztuk)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q363",
+          "text": "Coca Cola 0,5 (iloĹ›Ä‡ sztuk)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q364",
+          "text": "Coca Cola Zero 0,5 (iloĹ›c sztuk)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q365",
+          "text": "Cola Cherry",
+          "type": "yesno"
+        },
+        {
+          "id": "Q366",
+          "text": "Fanta 0,5 (iloĹ›Ä‡ sztuk)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q367",
+          "text": "FuzeTea 0,5 cytryna (iloĹ›c sztuk)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q368",
+          "text": "FuzeTea 0,5 peach (iloĹ›Ä‡ sztuk)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q369",
+          "text": "KEG Kozel",
+          "type": "yesno"
+        },
+        {
+          "id": "Q370",
+          "text": "KEG KsiÄ…ĹĽece Lager",
+          "type": "yesno"
+        },
+        {
+          "id": "Q371",
+          "text": "KEG Pszenica",
+          "type": "yesno"
+        },
+        {
+          "id": "Q372",
+          "text": "KEG Tyskie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q373",
+          "text": "Kinley 0,5 (iloĹ›Ä‡ sztuk)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q374",
+          "text": "KsiÄ…ĹĽece Ciemne Ĺagodne (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q375",
+          "text": "KsiÄ…ĹĽÄ™ce Cherry ALE (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q376",
+          "text": "KsiÄ…ĹĽÄ™ce Czerwony Lager (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q377",
+          "text": "KsiÄ…ĹĽÄ™ce IPA (iloĹ›c butelek )",
+          "type": "yesno"
+        },
+        {
+          "id": "Q378",
+          "text": "KsiÄ…ĹĽÄ™ce IPA 0% (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q379",
+          "text": "KsiÄ…ĹĽÄ™ce Porter (ilosc butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q380",
+          "text": "KsiÄ…ĹĽÄ™ce ZĹ‚ote Pszeniczne (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q381",
+          "text": "KsiÄ…ĹĽÄ™ce ZĹ‚ote Pszeniczne 0% (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q382",
+          "text": "Lech 0% 0,5l",
+          "type": "yesno"
+        },
+        {
+          "id": "Q383",
+          "text": "Lech Acai Granat (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q384",
+          "text": "Lech Arbuz MiÄ™ta (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q385",
+          "text": "Lech Free (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q386",
+          "text": "Lech Limonka MiÄ™ta (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q387",
+          "text": "Lech Premium 0,5 (ilosc butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q388",
+          "text": "Lemoniada (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q389",
+          "text": "Pilsner Urquell (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q390",
+          "text": "Sprite 0,5 (iloĹ›c sztuk)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q391",
+          "text": "Wino grzane",
+          "type": "yesno"
+        },
+        {
+          "id": "Q392",
+          "text": "Woda gazowana 0,5 (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q393",
+          "text": "Woda niegazowana 0,5 (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q394",
+          "text": "24herbs Gin (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q395",
+          "text": "Aperol (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q396",
+          "text": "Bacardi (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q397",
+          "text": "Bacardi kokos",
+          "type": "yesno"
+        },
+        {
+          "id": "Q398",
+          "text": "Bols 0,7 (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q399",
+          "text": "Bols brzoskwiniowy (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q400",
+          "text": "Bols kokosowy (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q401",
+          "text": "Campari (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q402",
+          "text": "Chiant Terra Del Brune czerwone (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q403",
+          "text": "Curacao",
+          "type": "yesno"
+        },
+        {
+          "id": "Q404",
+          "text": "De Falco Chardonnnay biaĹ‚e  (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q405",
+          "text": "De Falco Primitivo red (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q406",
+          "text": "Esmeralda bianco",
+          "type": "yesno"
+        },
+        {
+          "id": "Q407",
+          "text": "Esmeralda orange",
+          "type": "yesno"
+        },
+        {
+          "id": "Q408",
+          "text": "Genoa RED",
+          "type": "yesno"
+        },
+        {
+          "id": "Q409",
+          "text": "Genoa WHITE",
+          "type": "yesno"
+        },
+        {
+          "id": "Q410",
+          "text": "Grants (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q411",
+          "text": "Hendrick's",
+          "type": "yesno"
+        },
+        {
+          "id": "Q412",
+          "text": "Hennesy VSOP  (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q413",
+          "text": "Jagermaeister (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q414",
+          "text": "Kahlua (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q415",
+          "text": "L'uette Fiano Di Puglia (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q416",
+          "text": "Lanni Rosso red (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q417",
+          "text": "Martini bianco (ilosÄ‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q418",
+          "text": "Martini fiero (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q419",
+          "text": "Martini rosso (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q420",
+          "text": "Mataxa 12 (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q421",
+          "text": "Metaxa 5* (ilosÄ‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q422",
+          "text": "Monkey Shoulder",
+          "type": "yesno"
+        },
+        {
+          "id": "Q423",
+          "text": "Monkey Shoulder 0,7 (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q424",
+          "text": "Nalewka pomaraĹ„czowa 0,25l (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q425",
+          "text": "Nalewka pomaraĹ„czowa 0,5l (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q426",
+          "text": "Nalewka wiĹ›niowa 0,25l (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q427",
+          "text": "Nalewka wiĹ›niowa 0,5 (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q428",
+          "text": "Nero D'avola Rosato Montalo rĂłĹĽowe (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q429",
+          "text": "Pinot Grigio Montalto white (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q430",
+          "text": "Poggio Le Volpi biaĹ‚e (oloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q431",
+          "text": "Prosseco 0,7 (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q432",
+          "text": "Prosseco 200ml",
+          "type": "yesno"
+        },
+        {
+          "id": "Q433",
+          "text": "Sailor Jerry (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q434",
+          "text": "Sierra Reposado (GOLD) (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q435",
+          "text": "Sierra Silver Teqilla (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q436",
+          "text": "Tequilla Salito Gold",
+          "type": "yesno"
+        },
+        {
+          "id": "Q437",
+          "text": "Tullamore dew 0,7  (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q438",
+          "text": "Wild Turkey81  (iloĹ›c butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q439",
+          "text": "kawa (iloĹ›Ä‡ opakowaĹ„)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q440",
+          "text": "Ĺ»ubrĂłwka biaĹ‚a 0,5 (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q441",
+          "text": "Ĺ»ubrĂłwka czarna 0,7 (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q442",
+          "text": "Ĺ»ubrĂłwka z trawÄ… 0,5 (iloĹ›Ä‡ butelek)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q443",
+          "text": "Czy jest mydĹ‚o w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q444",
+          "text": "Czy jest mydĹ‚o w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q445",
+          "text": "Czy jest papier toaletowy w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q446",
+          "text": "Czy jest papier toaletowy w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q447",
+          "text": "Czy jest porzÄ…dek w toalecie damskiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q448",
+          "text": "Czy jest porzÄ…dek w toalecie mÄ™skiej?",
+          "type": "yesno"
+        },
+        {
+          "id": "Q449",
+          "text": "Toalety porzÄ…dek 11:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q450",
+          "text": "Toalety porzÄ…dek 13:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q451",
+          "text": "Toalety porzÄ…dek 15:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q452",
+          "text": "Toalety porzÄ…dek 17:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q453",
+          "text": "Toalety porzÄ…dek 19:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q454",
+          "text": "Ĺšmieci porzÄ…dek wejĹ›cie 32a plaĹĽa - 13:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q455",
+          "text": "Ĺšmieci porzÄ…dek wejĹ›cie 32a plaĹĽa - 15:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q456",
+          "text": "Ĺšmieci porzÄ…dek wejĹ›cie 32a plaĹĽa - 17:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q457",
+          "text": "Ĺšmieci porzÄ…dek wejĹ›cie 32a plaĹĽa - 19:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q458",
+          "text": "Toalety porzÄ…dek 11:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q459",
+          "text": "Toalety porzÄ…dek 13:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q460",
+          "text": "Toalety porzÄ…dek 15:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q461",
+          "text": "Toalety porzÄ…dek 17:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q462",
+          "text": "Toalety porzÄ…dek 19:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q463",
+          "text": "Ĺšmieci porzÄ…dek wejĹ›cie 33 plaĹĽa - 13:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q464",
+          "text": "Ĺšmieci porzÄ…dek wejĹ›cie 33 plaĹĽa - 15:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q465",
+          "text": "Ĺšmieci porzÄ…dek wejĹ›cie 33 plaĹĽa - 17:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q466",
+          "text": "Ĺšmieci porzÄ…dek wejĹ›cie 33 plaĹĽa - 19:00",
+          "type": "yesno"
+        },
+        {
+          "id": "Q467",
+          "text": "WypeĹ‚niono formularz",
+          "type": "yesno"
         }
       ]
     }
   ],
   "Budki": [
     {
-      "id": "BUDKI_OPEN_01",
-      "title": "Otwarcie dzienne — budki",
+      "id": "BUDKI_POMARACZOWA_PLAA",
+      "title": "PomaraĹ„czowa PlaĹĽa",
       "questions": [
         {
           "id": "Q1",
-          "text": "Stan urządzeń OK?",
-          "type": "boolean"
+          "text": "Czy nie ma Ĺ›mieci na terenie budki i wokĂłĹ‚ budki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q2",
+          "text": "Czy sÄ… robione zdjÄ™cia toalet",
+          "type": "yesno"
+        },
+        {
+          "id": "Q3",
+          "text": "Czy wszyscy sÄ… na stanowisku pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q4",
+          "text": "CzystoĹ›Ä‡ na tarasie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q5",
+          "text": "SprawdziÄ‡ stany magazynowe budki(czy wszystko jest)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q6",
+          "text": "SprawdziÄ‡ wydolnoĹ›Ä‡ kuchni",
+          "type": "yesno"
+        },
+        {
+          "id": "Q7",
+          "text": "Czy nie ma Ĺ›mieci na terenie budki i wokĂłĹ‚ budki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q8",
+          "text": "Czy sÄ… robione zdjÄ™cia toalet",
+          "type": "yesno"
+        },
+        {
+          "id": "Q9",
+          "text": "Czy wszyscy sÄ… na stanowisku pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q10",
+          "text": "CzystoĹ›Ä‡ na tarasie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q11",
+          "text": "PorzÄ…dek w zagrodzie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q12",
+          "text": "SprawdziÄ‡ stany magazynowe budki(czy wszystko jest)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q13",
+          "text": "SprawdziÄ‡ wydolnoĹ›Ä‡ kuchni",
+          "type": "yesno"
+        },
+        {
+          "id": "Q14",
+          "text": "Czy nie ma Ĺ›mieci na terenie budki i wokĂłĹ‚ budki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q15",
+          "text": "Czy sÄ… robione zdjÄ™cia toalet",
+          "type": "yesno"
+        },
+        {
+          "id": "Q16",
+          "text": "Czy wszyscy sÄ… na stanowisku pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q17",
+          "text": "CzystoĹ›Ä‡ na tarasie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q18",
+          "text": "PorzÄ…dek w zagrodzie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q19",
+          "text": "SprawdziÄ‡ stany magazynowe budki(czy wszystko jest)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q20",
+          "text": "SprawdziÄ‡ wydolnoĹ›Ä‡ kuchni",
+          "type": "yesno"
+        },
+        {
+          "id": "Q21",
+          "text": "Czy nie ma Ĺ›mieci na terenie budki i wokĂłĹ‚ budki",
+          "type": "yesno"
+        },
+        {
+          "id": "Q22",
+          "text": "Czy sÄ… robione zdjÄ™cia toalet",
+          "type": "yesno"
+        },
+        {
+          "id": "Q23",
+          "text": "Czy wszyscy sÄ… na stanowisku pracy",
+          "type": "yesno"
+        },
+        {
+          "id": "Q24",
+          "text": "CzystoĹ›Ä‡ na tarasie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q25",
+          "text": "PorzÄ…dek w zagrodzie",
+          "type": "yesno"
+        },
+        {
+          "id": "Q26",
+          "text": "SprawdziÄ‡ stany magazynowe budki(czy wszystko jest)",
+          "type": "yesno"
+        },
+        {
+          "id": "Q27",
+          "text": "SprawdziÄ‡ wydolnoĹ›Ä‡ kuchni",
+          "type": "yesno"
         }
       ]
     }
-  ]
+  ],
+  "Hotel": []
 }
