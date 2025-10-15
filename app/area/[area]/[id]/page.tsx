@@ -25,7 +25,7 @@ export default function ChecklistPage({ params }: { params: { area: string; id: 
   const [loading, setLoading] = useState(false)
   const [ynAnswers, setYnAnswers] = useState<Record<string, 'TAK' | 'NIE' | ''>>({})
 
-  // Jeśli brak listy – wyjdź wcześniej (narrowing dla TS)
+  // Jeśli brak listy – wyjdź wcześniej
   if (!list) {
     return (
       <main className="card">
@@ -42,10 +42,10 @@ export default function ChecklistPage({ params }: { params: { area: string; id: 
   async function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
 
-    // ✅ TS-safe: używamy ternary zamiast list.questions na sztywno
-   const yesNoRequired = (list?.questions ?? []).filter(
-  (q) => q.type === 'yesno' || q.type === 'boolean'
-) : []
+    // ✅ TS-safe: używamy strażnika zamiast „list.questions” na sztywno
+    const yesNoRequired = (list?.questions ?? []).filter(
+      (q) => q.type === 'yesno' || q.type === 'boolean'
+    )
 
     const anyMissing = yesNoRequired.some((q) => !ynAnswers[q.id] || ynAnswers[q.id] === '')
     if (anyMissing) {
@@ -56,25 +56,25 @@ export default function ChecklistPage({ params }: { params: { area: string; id: 
     const formData = new FormData(e.currentTarget)
     setLoading(true)
 
-    const answers =
-      list
-        ? list.questions.map((q) => ({
-            questionId: q.id,
-            questionText: q.text,
-            answer:
-              q.type === 'yesno' || q.type === 'boolean'
-                ? ynAnswers[q.id]
-                : formData.get(q.id)
-          }))
-        : []
+    const answers = (list?.questions ?? []).map((q) => ({
+      questionId: q.id,
+      questionText: q.text,
+      answer:
+        q.type === 'yesno' || q.type === 'boolean'
+          ? ynAnswers[q.id]
+          : formData.get(q.id)
+    }))
 
-    const payload = {
-      area,
-      checklistId: list.id,
-      answers
-    }
+      const checklistId = list ? list.id : params.id; // ✅ TS-safe fallback
 
-    const res = await fetch('/api/submit', {
+  const payload = {
+    area,
+    checklistId,
+    answers
+  }
+
+  const res = await fetch('/api/submit', {
+
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)
@@ -106,7 +106,7 @@ export default function ChecklistPage({ params }: { params: { area: string; id: 
                   onChange={(e) => setYesNo(q.id, e.currentTarget.checked)}
                 />
                 <span>Tak / Nie</span>
-                {/* Ukryty input, żeby zawsze wysłać wartość do FormData */}
+                {/* Ukryty input, aby zawsze wysłać wartość do FormData */}
                 <input type="hidden" name={q.id} value={ynAnswers[q.id] ?? ''} required />
               </div>
             )}
