@@ -3,45 +3,6 @@ export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
-import { google } from 'googleapis'
-
-export async function GET() {
-  try {
-    const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID
-    const clientEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL
-    const key = (process.env.GOOGLE_SERVICE_ACCOUNT_KEY || '').replace(/\\n/g, '\n')
-
-    if (!spreadsheetId) throw new Error('Missing GOOGLE_SHEETS_SPREADSHEET_ID')
-    if (!clientEmail)   throw new Error('Missing GOOGLE_SERVICE_ACCOUNT_EMAIL')
-    if (!key)           throw new Error('Missing GOOGLE_SERVICE_ACCOUNT_KEY')
-
-    const auth = new google.auth.JWT({
-      email: clientEmail,
-      key,
-      scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
-    })
-
-    const sheets = google.sheets({ version: 'v4', auth })
-
-    // PRZYKŁADOWY ODCZYT (dopasuj zakres do swojego arkusza)
-    const range = 'responses!A:I'
-    const resp = await sheets.spreadsheets.values.get({ spreadsheetId, range })
-    const rows = resp.data.values ?? []
-
-    // TODO: policz statystyki tygodniowe do dashboardu
-    const data = { rowsCount: rows.length }
-
-    return Response.json(data)
-  } catch (err: any) {
-    console.error('WEEKLY API ERROR:', err?.stack || err)
-    return Response.json(
-      { error: 'Weekly failed', details: String(err?.message || err) },
-      { status: 500 }
-    )
-  }
-}
-
-
 import { NextResponse } from 'next/server'
 import { google } from 'googleapis'
 import data from '@/data/checklists.json'
@@ -70,7 +31,7 @@ function ymd(d: Date) {
 
 export async function GET() {
   try {
-    // 1) Daty tygodnia (ostatnie 7 dni, włącznie z dziś)
+    // 1) Ostatnie 7 dni (łącznie z dziś)
     const end = new Date()
     const start = new Date()
     start.setDate(end.getDate() - 6)
@@ -79,33 +40,42 @@ export async function GET() {
       days.push(ymd(d))
     }
 
-    // 2) Oczekiwana liczba pytań/checlist (na podstawie pliku lokalnego)
-    //    data[area] -> [{ id, title, questions:[...] }]
+    // 2) Oczekiwana liczba pytań na checklistę (z pliku lokalnego)
     const expectedQuestions: Record<string, Record<string, number>> = {}
     const totalChecklistsPerArea: Record<string, number> = {}
     Object.entries(data as any).forEach(([area, lists]: any) => {
       expectedQuestions[area] = {}
-      totalChecklistsPerArea[area] = lists.length
-      for (const l of lists) expectedQuestions[area][l.id] = l.questions.length
+      totalChecklistsPerArea[area] = Array.isArray(lists) ? lists.length : 0
+      for (const l of (lists as any[] ?? [])) {
+        expectedQuestions[area][l.id] = Array.isArray(l.questions) ? l.questions.length : 0
+      }
     })
 
-    // 3) Autoryzacja Google Sheets
+    // 3) Google Sheets auth
+    const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID
+    const clientEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL
+    const key = (process.env.GOOGLE_SERVICE_ACCOUNT_KEY || '').replace(/\\n/g, '\n')
+
+    if (!spreadsheetId) throw new Error('Missing GOOGLE_SHEETS_SPREADSHEET_ID')
+    if (!clientEmail)   throw new Error('Missing GOOGLE_SERVICE_ACCOUNT_EMAIL')
+    if (!key)           throw new Error('Missing GOOGLE_SERVICE_ACCOUNT_KEY')
+
     const jwt = new google.auth.JWT({
-      email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-      key: (process.env.GOOGLE_SERVICE_ACCOUNT_KEY || '').replace(/\\n/g, '\n'),
+      email: clientEmail,
+      key,
       scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
     })
     const sheets = google.sheets({ version: 'v4', auth: jwt })
 
-    // 4) Pobierz wszystkie dane z zakładki "responses"
-    const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID!
+    // 4) Pobierz dane z arkusza
+    // Zakres dopasuj do swojego układu kolumn
     const resp = await sheets.spreadsheets.values.get({
       spreadsheetId,
-      range: 'responses!A:H', // A: ts, B: date, C: area, D: listId, E: qId, F: text, G: answer, H: user
+      range: 'responses!A:H', // A:ts B:date C:area D:listId E:qId F:text G:answer H:user
     })
-    const values = resp.data.values || []
+    const values = resp.data.values ?? []
 
-    // 5) Parsowanie tylko z ostatnich 7 dni
+    // 5) Parsuj tylko w oknie 7 dni
     const rows: Row[] = []
     for (let i = 1; i < values.length; i++) {
       const r = values[i]
@@ -125,9 +95,7 @@ export async function GET() {
       })
     }
 
-    // 6) Grupowanie i liczenie ukończeń
-    //    Zliczamy distinct Q w danym (date, area, listId).
-    //    Jeśli liczba odpowiedzi == oczekiwana liczba pytań -> DONE.
+    // 6) Grupowanie – które pytania w danej (data, area, listId) zostały już odpowiedziane
     type QSet = { qs: Set<string>; latestByQ: Map<string, { ts: number; user: string }> }
     const answered: Record<string, QSet> = {}
     for (const r of rows) {
@@ -141,39 +109,35 @@ export async function GET() {
       }
     }
 
-    // 7) Dzienna statystyka per area i „kto dokończył”
+    // 7) Dzienna statystyka: ile checklist zrobiono / ile czeka; kto „domykał”
     const areas = Object.keys(totalChecklistsPerArea)
     type Daily = { date: string; total: number; done: number; pending: number }
     type UsersAgg = Record<string, number>
     const byArea: Record<string, { daily: Daily[]; users: UsersAgg }> = {}
+
     for (const area of areas) {
       byArea[area] = { daily: [], users: {} }
       for (const d of days) {
         const total = totalChecklistsPerArea[area] || 0
         let done = 0
 
-        // znajdź listy tego dnia dla tej strefy i oceń czy komplet
-        if (expectedQuestions[area]) {
-          const listIds = Object.keys(expectedQuestions[area])
-          for (const listId of listIds) {
-            const key = normKey(d, area, listId)
-            const group = answered[key]
-            const expected = expectedQuestions[area][listId]
-            if (group && group.qs.size >= expected) {
-              done++
+        const listIds = expectedQuestions[area] ? Object.keys(expectedQuestions[area]) : []
+        for (const listId of listIds) {
+          const group = answered[normKey(d, area, listId)]
+          const expected = expectedQuestions[area]?.[listId] ?? 0
+          if (group && group.qs.size >= expected) {
+            done++
 
-              // przypisz checklistę użytkownikowi, który „domknął” ją jako ostatni
-              // (bierzemy najpóźniejszy timestamp w ramach tej checklisty)
-              let winner = 'unknown'
-              let best = 0
-              for (const { ts, user } of group.latestByQ.values()) {
-                if (ts > best) {
-                  best = ts
-                  winner = user || 'unknown'
-                }
+            // użytkownik, który „zamknął” checklistę (ostatnia odpowiedź)
+            let winner = 'unknown'
+            let best = 0
+            for (const { ts, user } of group.latestByQ.values()) {
+              if (ts > best) {
+                best = ts
+                winner = user || 'unknown'
               }
-              byArea[area].users[winner] = (byArea[area].users[winner] || 0) + 1
             }
+            byArea[area].users[winner] = (byArea[area].users[winner] || 0) + 1
           }
         }
 
@@ -190,8 +154,11 @@ export async function GET() {
       week: { start: ymd(start), end: ymd(end), days },
       byArea,
     })
-  } catch (e: any) {
-    console.error('WEEKLY API ERROR:', e?.message || e)
-    return NextResponse.json({ error: 'weekly_failed', detail: String(e?.message || e) }, { status: 500 })
+  } catch (err: any) {
+    console.error('WEEKLY API ERROR:', err?.stack || err)
+    return NextResponse.json(
+      { error: 'weekly_failed', detail: String(err?.message || err) },
+      { status: 500 }
+    )
   }
 }
