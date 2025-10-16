@@ -125,8 +125,7 @@ async function DashboardInner() {
 export default function DashboardPage() {
   return (
     <Suspense fallback={<div className="card">Ładowanie…</div>}>
-      {/* @ts-expect-error Async Server Component */}
-      <DashboardInner />
+            <DashboardInner />
     </Suspense>
   )
 }
