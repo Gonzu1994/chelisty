@@ -1,5 +1,9 @@
 import { Suspense } from 'react'
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
+
 type Weekly = {
   week: { start: string; end: string; days: string[] }
   byArea: Record<
