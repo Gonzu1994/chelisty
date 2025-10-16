@@ -1,7 +1,35 @@
-import { Suspense } from 'react'
-
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
+
+import { headers } from 'next/headers'
+
+async function getWeekly() {
+  try {
+    const hdrs = headers()
+    const proto = hdrs.get('x-forwarded-proto') ?? 'https'
+    const host = hdrs.get('host')!
+    const base = `${proto}://${host}`
+
+    const res = await fetch(`${base}/api/weekly`, { cache: 'no-store' })
+    if (!res.ok) {
+      const txt = await res.text()
+      throw new Error(txt || `HTTP ${res.status}`)
+    }
+    return res.json()
+  } catch (e: any) {
+    return { error: String(e?.message || e) }
+  }
+}
+
+// ...
+// w komponencie:
+const weekly = await getWeekly()
+if ('error' in weekly) {
+  return <div className="card">Nie udało się pobrać danych tygodnia. Szczegóły: {weekly.error}</div>
+}
+
+
+import { Suspense } from 'react'
 
 
 type Weekly = {

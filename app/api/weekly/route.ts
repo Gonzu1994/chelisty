@@ -1,6 +1,46 @@
+// app/api/weekly/route.ts
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
+
+import { google } from 'googleapis'
+
+export async function GET() {
+  try {
+    const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID
+    const clientEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL
+    const key = (process.env.GOOGLE_SERVICE_ACCOUNT_KEY || '').replace(/\\n/g, '\n')
+
+    if (!spreadsheetId) throw new Error('Missing GOOGLE_SHEETS_SPREADSHEET_ID')
+    if (!clientEmail)   throw new Error('Missing GOOGLE_SERVICE_ACCOUNT_EMAIL')
+    if (!key)           throw new Error('Missing GOOGLE_SERVICE_ACCOUNT_KEY')
+
+    const auth = new google.auth.JWT({
+      email: clientEmail,
+      key,
+      scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],
+    })
+
+    const sheets = google.sheets({ version: 'v4', auth })
+
+    // PRZYKŁADOWY ODCZYT (dopasuj zakres do swojego arkusza)
+    const range = 'responses!A:I'
+    const resp = await sheets.spreadsheets.values.get({ spreadsheetId, range })
+    const rows = resp.data.values ?? []
+
+    // TODO: policz statystyki tygodniowe do dashboardu
+    const data = { rowsCount: rows.length }
+
+    return Response.json(data)
+  } catch (err: any) {
+    console.error('WEEKLY API ERROR:', err?.stack || err)
+    return Response.json(
+      { error: 'Weekly failed', details: String(err?.message || err) },
+      { status: 500 }
+    )
+  }
+}
+
 
 import { NextResponse } from 'next/server'
 import { google } from 'googleapis'
