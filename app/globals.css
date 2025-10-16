@@ -10,3 +10,33 @@ a { @apply text-inherit no-underline; }
 .input { @apply rounded-2xl border px-3 py-2 bg-white; }
 .grid-tiles { @apply grid gap-4 grid-cols-2 md:grid-cols-4; }
 .container { @apply max-w-3xl mx-auto p-6; }
+
+/* === Dodatkowe style do dashboardu i checklist === */
+.progress-bar {
+  @apply w-full h-2 bg-gray-200 rounded;
+}
+.progress-bar-fill {
+  @apply h-2 bg-green-500 rounded transition-all;
+}
+.card-alt {
+  @apply rounded-xl border border-gray-200 bg-white p-4 shadow-sm;
+}
+.btn-yn {
+  @apply px-4 py-2 rounded-lg font-medium border border-gray-300 cursor-pointer select-none transition;
+}
+.btn-yn-yes {
+  @apply bg-green-100 text-green-700 hover:bg-green-200;
+}
+.btn-yn-no {
+  @apply bg-red-100 text-red-700 hover:bg-red-200;
+}
+.btn-yn-active-yes {
+  @apply bg-green-600 text-white;
+}
+.btn-yn-active-no {
+  @apply bg-red-600 text-white;
+}
+h1, h2, h3, h4 {
+  @apply font-semibold text-gray-800;
+}
+
