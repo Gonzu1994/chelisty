@@ -15,6 +15,9 @@ type WeeklyOk = {
 
 type WeeklyErr = { error: string; detail?: string }
 
+// app/dashboard/page.tsx
+import { headers } from 'next/headers'
+
 async function getWeekly(): Promise<WeeklyOk | WeeklyErr> {
   const hdrs = headers()
   const proto =
@@ -22,28 +25,23 @@ async function getWeekly(): Promise<WeeklyOk | WeeklyErr> {
     (process.env.NODE_ENV === 'production' ? 'https' : 'http')
   const host = hdrs.get('host')!
   const base = `${proto}://${host}`
+  const cookie = hdrs.get('cookie') ?? ''         // <<< DODANE
 
   try {
     const res = await fetch(`${base}/api/weekly`, {
       cache: 'no-store',
+      headers: { cookie },                         // <<< DODANE
     })
     const contentType = res.headers.get('content-type') ?? ''
 
     if (!res.ok) {
       const body = await res.text().catch(() => '')
-      return {
-        error: `Błąd API /api/weekly: ${res.status} ${res.statusText}. Treść: ${body.slice(0, 300)}`,
-      }
+      return { error: `Błąd API /api/weekly: ${res.status} ${res.statusText}. Treść: ${body.slice(0, 300)}` }
     }
 
     if (!contentType.includes('application/json')) {
       const body = await res.text().catch(() => '')
-      return {
-        error: `Oczekiwałem JSON, dostałem "${contentType || 'brak content-type'}". Treść: ${body.slice(
-          0,
-          300,
-        )}`,
-      }
+      return { error: `Oczekiwałem JSON, dostałem "${contentType || 'brak content-type'}". Treść: ${body.slice(0, 300)}` }
     }
 
     return (await res.json()) as WeeklyOk
@@ -51,6 +49,7 @@ async function getWeekly(): Promise<WeeklyOk | WeeklyErr> {
     return { error: `Wyjątek podczas pobierania: ${String(e?.message || e)}` }
   }
 }
+
 
 function SummaryCard({
   title,
