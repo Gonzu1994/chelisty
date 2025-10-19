@@ -1,4 +1,3 @@
-// app/dashboard/page.tsx
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
@@ -12,129 +11,130 @@ type WeeklyOk = {
   week: { start: string; end: string; days: string[] }
   byArea: Record<string, AreaStats>
 }
+
 type WeeklyErr = { error: string; detail?: string }
 
-async function getWeekly(): Promise<WeeklyOk> {
+async function getWeekly(): Promise<WeeklyOk | WeeklyErr> {
   const hdrs = headers()
   const proto =
     hdrs.get('x-forwarded-proto') ??
     (process.env.NODE_ENV === 'production' ? 'https' : 'http')
   const host = hdrs.get('host')!
-  const cookie = hdrs.get('cookie') ?? ''
   const base = `${proto}://${host}`
 
-  const res = await fetch(`${base}/api/weekly`, {
-    cache: 'no-store',
-    headers: { cookie },
-  })
+  const res = await fetch(`${base}/api/weekly`, { cache: 'no-store' })
 
+  // twarde sprawdzenie typu
   const ct = res.headers.get('content-type') ?? ''
+  const text = await res.text()
   if (!res.ok) {
-    const body = await res.text().catch(() => '')
-    throw new Error(
-      `Błąd API /api/weekly: ${res.status} ${res.statusText}. Treść: ${body.slice(
-        0,
-        300
-      )}`
-    )
+    return { error: `Błąd API /api/weekly: ${res.status} ${res.statusText}. Treść: ${text}` }
   }
   if (!ct.includes('application/json')) {
-    const body = await res.text().catch(() => '')
-    throw new Error(
-      `Oczekiwałem JSON, dostałem "${ct || 'brak content-type'}". Treść: ${body.slice(
-        0,
-        300
-      )}`
-    )
+    return { error: `Oczekiwałem JSON, dostałem "${ct || 'brak content-type'}". Treść: ${text.slice(0, 300)}` }
   }
 
-  return (await res.json()) as WeeklyOk
+  try {
+    return JSON.parse(text) as WeeklyOk
+  } catch {
+    return { error: `Nie mogłem sparsować JSON-a. Treść: ${text.slice(0, 300)}` }
+  }
 }
 
 export default async function DashboardPage() {
-  let weekly: WeeklyOk | null = null
-  try {
-    weekly = await getWeekly()
-  } catch (e: any) {
+  const weekly = await getWeekly()
+
+  if ('error' in weekly) {
     return (
-      <main className="container grid gap-4">
-        <h1 className="text-2xl font-semibold">Dashboard</h1>
+      <main className="container">
+        <h1 className="text-xl font-semibold mb-4">Dashboard</h1>
         <div className="card">
           <div className="font-semibold mb-2">Nie udało się pobrać danych</div>
-          <pre className="whitespace-pre-wrap text-sm">
-            {e?.message || String(e)}
-          </pre>
+          <pre className="whitespace-pre-wrap text-sm">{weekly.error}</pre>
         </div>
       </main>
     )
   }
 
-  // render prostych kafelków + tabela
-  const areas = Object.keys(weekly.byArea)
+  const { week, byArea } = weekly
+  const areas = Object.keys(byArea)
 
   return (
     <main className="container grid gap-4">
-      <h1 className="text-2xl font-semibold">Dashboard</h1>
-
-      <div className="grid-tiles">
-        {areas.map((area) => {
-          const a = weekly!.byArea[area]
-          const sumTotal = a.daily.reduce((s, d) => s + d.total, 0)
-          const sumDone = a.daily.reduce((s, d) => s + d.done, 0)
-          const sumPending = a.daily.reduce((s, d) => s + d.pending, 0)
-          return (
-            <div key={area} className="card">
-              <div className="font-semibold mb-2">{area}</div>
-              <div className="text-sm">Do wykonania: {sumTotal}</div>
-              <div className="text-sm">Wykonane: {sumDone}</div>
-              <div className="text-sm">Pozostało: {sumPending}</div>
-            </div>
-          )
-        })}
-      </div>
+      <h1 className="text-xl font-semibold">Dashboard</h1>
+      <p className="text-sm text-gray-600">
+        Zakres: {week.start} – {week.end}
+      </p>
 
       {areas.map((area) => {
-        const a = weekly!.byArea[area]
+        const stats = byArea[area]
+        const sums = stats.daily.reduce(
+          (acc, d) => {
+            acc.total += d.total
+            acc.done += d.done
+            acc.pending += d.pending
+            return acc
+          },
+          { total: 0, done: 0, pending: 0 }
+        )
+
         return (
-          <div key={area} className="card">
-            <div className="font-semibold mb-3">{area} — tydzień</div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
+          <section key={area} className="card">
+            <h2 className="font-semibold mb-2">{area}</h2>
+
+            <div className="grid grid-cols-3 gap-3 mb-4">
+              <div className="card">
+                <div className="text-xs text-gray-500">Do zrobienia (suma)</div>
+                <div className="text-lg font-semibold">{sums.total}</div>
+              </div>
+              <div className="card">
+                <div className="text-xs text-gray-500">Zrobione (suma)</div>
+                <div className="text-lg font-semibold text-green-600">{sums.done}</div>
+              </div>
+              <div className="card">
+                <div className="text-xs text-gray-500">Pozostało</div>
+                <div className="text-lg font-semibold text-red-600">{sums.pending}</div>
+              </div>
+            </div>
+
+            <div className="overflow-x-auto mb-4">
+              <table className="min-w-full text-sm">
                 <thead>
-                  <tr className="text-left">
-                    <th className="py-2 pr-3">Dzień</th>
-                    <th className="py-2 pr-3">Do wyk.</th>
-                    <th className="py-2 pr-3">Wykonane</th>
-                    <th className="py-2 pr-3">Pozostało</th>
+                  <tr className="text-left text-gray-500">
+                    <th className="pr-3 py-1">Dzień</th>
+                    <th className="pr-3 py-1">Plan</th>
+                    <th className="pr-3 py-1">Wykonane</th>
+                    <th className="pr-3 py-1">Do zrobienia</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {a.daily.map((d) => (
+                  {stats.daily.map((d) => (
                     <tr key={d.date} className="border-t">
-                      <td className="py-2 pr-3">{d.date}</td>
-                      <td className="py-2 pr-3">{d.total}</td>
-                      <td className="py-2 pr-3">{d.done}</td>
-                      <td className="py-2 pr-3">{d.pending}</td>
+                      <td className="pr-3 py-1">{d.date}</td>
+                      <td className="pr-3 py-1">{d.total}</td>
+                      <td className="pr-3 py-1 text-green-600">{d.done}</td>
+                      <td className="pr-3 py-1 text-red-600">{d.pending}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            <div className="mt-4">
-              <div className="font-medium mb-2">Kto wykonał (liczba checklist):</div>
-              <div className="flex flex-wrap gap-2">
-                {Object.entries(a.users).map(([user, cnt]) => (
-                  <span key={user} className="px-3 py-1 rounded-2xl bg-gray-100">
-                    {user}: {cnt}
-                  </span>
+            <div>
+              <div className="text-xs text-gray-500 mb-1">Kto domyka checklisty</div>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+                {Object.entries(stats.users).map(([u, cnt]) => (
+                  <div key={u} className="card flex items-center justify-between">
+                    <span>{u}</span>
+                    <span className="font-semibold">{cnt}</span>
+                  </div>
                 ))}
-                {Object.keys(a.users).length === 0 && (
-                  <span className="text-gray-500">Brak wpisów</span>
+                {Object.keys(stats.users).length === 0 && (
+                  <div className="text-sm text-gray-500">Brak danych</div>
                 )}
               </div>
             </div>
-          </div>
+          </section>
         )
       })}
     </main>

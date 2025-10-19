@@ -1,85 +1,189 @@
-// app/area/[area]/page.tsx
-export const dynamic = 'force-dynamic'
-export const revalidate = 0
+'use client'
 
-import { headers } from 'next/headers'
 import data from '@/data/checklists.json'
+import { useMemo, useState } from 'react'
 
-async function fetchDoneToday(area: string) {
-  const hdrs = headers()
-  const proto =
-    hdrs.get('x-forwarded-proto') ??
-    (process.env.NODE_ENV === 'production' ? 'https' : 'http')
-  const host = hdrs.get('host')!
-  const cookie = hdrs.get('cookie') ?? ''
-  const base = `${proto}://${host}`
+type QType = 'yesno' | 'boolean' | 'number' | 'text'
 
-  const res = await fetch(`${base}/api/done?area=${encodeURIComponent(area)}`, {
-    cache: 'no-store',
-    headers: { cookie },
-  })
-
-  const contentType = res.headers.get('content-type') ?? ''
-
-  if (!res.ok) {
-    const body = await res.text().catch(() => '')
-    throw new Error(
-      `Błąd API /api/done: ${res.status} ${res.statusText}. ` +
-        `Treść: ${body.slice(0, 300)}`
-    )
-  }
-
-  if (!contentType.includes('application/json')) {
-    const body = await res.text().catch(() => '')
-    throw new Error(
-      `Oczekiwałem JSON, dostałem "${contentType || 'brak content-type'}". ` +
-        `Treść: ${body.slice(0, 300)}`
-    )
-  }
-
-  return (await res.json()) as { checklistIds: string[] }
+type Question = {
+  id: string
+  text: string
+  type: QType
 }
 
-export default async function AreaPage({
+type Checklist = {
+  id: string
+  title: string
+  questions: Question[]
+}
+
+export default function ChecklistPage({
   params,
 }: {
-  params: { area: string }
+  params: { area: string; id: string }
 }) {
   const area = decodeURIComponent(params.area)
 
-  try {
-    const done = await fetchDoneToday(area)
-    const lists = (data as any)[area] as { id: string; title: string }[]
-    const visible = lists.filter((l) => !done.checklistIds.includes(l.id))
+  // Szukamy listy tylko raz (memo) — i zawsze bezpiecznie zawężamy typ.
+  const list: Checklist | undefined = useMemo(() => {
+    const src = (data as Record<string, Checklist[] | undefined>)[area]
+    return src?.find((x) => x.id === params.id)
+  }, [area, params.id])
 
+  // Jeżeli nie ma takiej listy — pokazujemy czytelny komunikat
+  if (!list) {
     return (
-      <main className="grid gap-4">
-        <h2 className="text-xl font-semibold">{area}</h2>
-        {visible.map((l) => (
-          <a key={l.id} href={`/area/${area}/${l.id}`} className="card">
-            <div className="font-semibold">{l.title}</div>
-          </a>
-        ))}
-        {visible.length === 0 && (
-          <p className="card">Wszystko zrobione na dziś 🎉</p>
-        )}
-      </main>
-    )
-  } catch (e: any) {
-    console.error('AREA PAGE ERROR:', e)
-    return (
-      <main className="grid gap-4">
-        <h2 className="text-xl font-semibold">{area}</h2>
-        <div className="card">
-          <div className="font-semibold mb-2">Błąd ładowania</div>
-          <pre className="whitespace-pre-wrap text-sm">
-            {e?.message || String(e)}
-          </pre>
-          <p className="text-xs text-gray-500 mt-2">
-            Sprawdź, czy jesteś zalogowany, oraz czy API /api/done działa.
-          </p>
-        </div>
+      <main className="container">
+        <div className="card">Nie znaleziono checklisty.</div>
       </main>
     )
   }
+
+  // Stan odpowiedzi TAK/NIE (oraz ewentualnych pól liczbowych/tekstowych)
+  const [ynAnswers, setYnAnswers] = useState<Record<string, 'TAK' | 'NIE' | ''>>(
+    Object.fromEntries(list.questions.map((q) => [q.id, '']))
+  )
+  const [freeAnswers, setFreeAnswers] = useState<Record<string, string>>({})
+  const [loading, setLoading] = useState(false)
+
+  // Wysyłka JEDNEJ odpowiedzi (klik w TAK/NIE)
+  async function sendYesNo(q: Question, val: 'TAK' | 'NIE') {
+    setYnAnswers((s) => ({ ...s, [q.id]: val }))
+
+    // budujemy ładny payload tylko z jednym pytaniem
+    const payload = {
+      area,
+      checklistId: list.id,
+      question: { id: q.id, text: q.text },
+      answer: val,
+    }
+
+    try {
+      setLoading(true)
+      const res = await fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+      if (!res.ok) {
+        const t = await res.text().catch(() => '')
+        throw new Error(`Błąd API: ${res.status} ${res.statusText}\n${t}`)
+      }
+    } catch (e) {
+      console.error(e)
+      alert('Nie udało się zapisać odpowiedzi')
+      // cofamy zmianę tylko tego jednego pola
+      setYnAnswers((s) => ({ ...s, [q.id]: '' }))
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  // Wysyłka całości (dla pól liczbowych/tekstowych i ewentualnie domknięcia listy)
+  async function submit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    if (loading) return
+
+    const answers = list.questions.map((q) => {
+      if (q.type === 'yesno' || q.type === 'boolean') {
+        return {
+          questionId: q.id,
+          questionText: q.text,
+          answer: ynAnswers[q.id] ?? '',
+        }
+      }
+      return {
+        questionId: q.id,
+        questionText: q.text,
+        answer: freeAnswers[q.id] ?? '',
+      }
+    })
+
+    try {
+      setLoading(true)
+      const res = await fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          area,
+          checklistId: list.id,
+          answers,
+        }),
+      })
+      if (!res.ok) {
+        const t = await res.text().catch(() => '')
+        throw new Error(`Błąd API: ${res.status} ${res.statusText}\n${t}`)
+      }
+      // po zapisie wracamy na listę checklist danej strefy
+      window.location.href = `/area/${area}`
+    } catch (err) {
+      console.error(err)
+      alert('Błąd zapisu')
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  return (
+    <form onSubmit={submit} className="grid gap-4 container">
+      <h1 className="text-xl font-semibold">{list.title}</h1>
+
+      {list.questions.map((q) => (
+        <label key={q.id} className="grid gap-2 card">
+          <span>{q.text}</span>
+
+          {(q.type === 'yesno' || q.type === 'boolean') && (
+            <div className="flex gap-2">
+              <button
+                type="button"
+                className={`btn ${
+                  ynAnswers[q.id] === 'TAK' ? 'ring-2 ring-green-500' : ''
+                }`}
+                onClick={() => sendYesNo(q, 'TAK')}
+                disabled={loading}
+              >
+                TAK
+              </button>
+              <button
+                type="button"
+                className={`btn ${
+                  ynAnswers[q.id] === 'NIE' ? 'ring-2 ring-red-500' : ''
+                }`}
+                onClick={() => sendYesNo(q, 'NIE')}
+                disabled={loading}
+              >
+                NIE
+              </button>
+            </div>
+          )}
+
+          {q.type === 'number' && (
+            <input
+              type="number"
+              className="input"
+              value={freeAnswers[q.id] ?? ''}
+              onChange={(e) =>
+                setFreeAnswers((s) => ({ ...s, [q.id]: e.target.value }))
+              }
+            />
+          )}
+
+          {q.type === 'text' && (
+            <input
+              type="text"
+              className="input"
+              value={freeAnswers[q.id] ?? ''}
+              onChange={(e) =>
+                setFreeAnswers((s) => ({ ...s, [q.id]: e.target.value }))
+              }
+            />
+          )}
+        </label>
+      ))}
+
+      <button disabled={loading} className="btn">
+        {loading ? 'Zapisywanie…' : 'Zapisz'}
+      </button>
+    </form>
+  )
 }
