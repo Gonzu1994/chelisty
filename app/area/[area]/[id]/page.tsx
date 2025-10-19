@@ -39,9 +39,12 @@ export default function ChecklistPage({
     )
   }
 
+  // Od tego miejsca używamy już tylko "safeList" – TS wie, że to nie-undefined
+  const safeList: Checklist = list
+
   // Stan odpowiedzi TAK/NIE (oraz ewentualnych pól liczbowych/tekstowych)
   const [ynAnswers, setYnAnswers] = useState<Record<string, 'TAK' | 'NIE' | ''>>(
-    Object.fromEntries(list.questions.map((q) => [q.id, '']))
+    Object.fromEntries(safeList.questions.map((q) => [q.id, '']))
   )
   const [freeAnswers, setFreeAnswers] = useState<Record<string, string>>({})
   const [loading, setLoading] = useState(false)
@@ -50,10 +53,10 @@ export default function ChecklistPage({
   async function sendYesNo(q: Question, val: 'TAK' | 'NIE') {
     setYnAnswers((s) => ({ ...s, [q.id]: val }))
 
-    // budujemy ładny payload tylko z jednym pytaniem
+    // budujemy payload tylko z jednym pytaniem
     const payload = {
       area,
-      checklistId: list.id,
+      checklistId: safeList.id, // <- Używamy safeList
       question: { id: q.id, text: q.text },
       answer: val,
     }
@@ -84,7 +87,7 @@ export default function ChecklistPage({
     e.preventDefault()
     if (loading) return
 
-    const answers = list.questions.map((q) => {
+    const answers = safeList.questions.map((q) => {
       if (q.type === 'yesno' || q.type === 'boolean') {
         return {
           questionId: q.id,
@@ -106,7 +109,7 @@ export default function ChecklistPage({
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           area,
-          checklistId: list.id,
+          checklistId: safeList.id, // <- Używamy safeList
           answers,
         }),
       })
@@ -126,9 +129,9 @@ export default function ChecklistPage({
 
   return (
     <form onSubmit={submit} className="grid gap-4 container">
-      <h1 className="text-xl font-semibold">{list.title}</h1>
+      <h1 className="text-xl font-semibold">{safeList.title}</h1>
 
-      {list.questions.map((q) => (
+      {safeList.questions.map((q) => (
         <label key={q.id} className="grid gap-2 card">
           <span>{q.text}</span>
 
